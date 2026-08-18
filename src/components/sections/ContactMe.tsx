@@ -38,12 +38,13 @@ export function ContactMe() {
             </a>
           ))}
 
-          <Link 
-            to="/resume"
+          <a 
+            href="/heverton-resume.pdf"
+            download="heverton-resume.pdf"
             className="inline-flex items-center gap-2 bg-surface text-text-primary px-3 py-1.5 rounded border border-border-default hover:bg-surface-elevated transition-colors font-ui text-xs"
           >
             <FaFileAlt /> {language === 'en' ? 'Resume' : 'Currículo'}
-          </Link>
+          </a>
         </div>
       </div>
     </section>
