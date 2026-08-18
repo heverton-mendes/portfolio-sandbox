@@ -17,12 +17,10 @@
     "jsx": "react-jsx",
 
     /* Linting */
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
     "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true
-    "noUnusedLocals": false,         /* <-- ADICIONE ESTA LINHA */
-    "noUnusedParameters": false      /* <-- E ESTA LINHA */
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
   },
   "include": ["src"]
 }
