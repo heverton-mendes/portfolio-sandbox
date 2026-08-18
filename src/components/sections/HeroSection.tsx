@@ -70,13 +70,10 @@ export function HeroSection() {
           <div className="items-center flex justify-center relative w-24 h-24 md:w-32 md:h-32 mr-4 md:mr-[24px] z-[10] shrink-0">
             <div className="relative w-full h-full border-[rgb(10,_10,_11)] border-[4px] shadow-[rgba(0,0,0,0.267)_0px_4px_32px_0px] rounded-[10px] z-[2]">
               <img 
-                src="/images/avatar.png.png" 
-                alt="Heverton Mendes" 
-                className="size-full object-cover overflow-clip bg-[rgb(31,_31,_35)] rounded-[6px]"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src = 'https://github.com/heverton-mendes.png';
-                }}
-              />
+  src="/images/avatar.png.png" 
+  alt="Heverton Mendes" 
+  className="w-full h-full object-cover rounded-xl [image-rendering:-webkit-optimize-contrast]"
+/>
               <div className="absolute -bottom-1 -right-1 bg-[#0a0a0b] p-1.5 rounded-full z-[5]">
                 <div className="w-2.5 h-2.5 bg-[#10b981] rounded-full shadow-[0_0_8px_rgba(16,185,129,0.5)] animate-pulse-dot" />
               </div>
