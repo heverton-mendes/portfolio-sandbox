@@ -39,7 +39,7 @@ export function ContactMe() {
           ))}
 
           <a 
-            href="/heverton-resume.pdf.pdf"
+            href="/resume/heverton-resume.pdf"
             download="Heverton-Mendes-Resume.pdf"
             className="inline-flex items-center gap-2 bg-surface text-text-primary px-3 py-1.5 rounded border border-border-default hover:bg-surface-elevated transition-colors font-ui text-xs"
           >

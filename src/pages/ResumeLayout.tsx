@@ -32,17 +32,16 @@ export default function ResumeLayout() {
         </p>
         
         <a 
-          href="/resume/heverton-resume.pdf.pdf" 
-          download
+          href="/resume/heverton-resume.pdf" 
+          download="Heverton-Mendes-Resume.pdf"
           className="inline-flex items-center gap-2 bg-surface border border-border-default hover:bg-surface-elevated text-text-primary px-4 py-2 rounded mb-8 transition-colors text-sm font-ui"
         >
           <FaDownload className="text-accent-amber" /> {t.download}
         </a>
 
         <div className="w-full max-w-4xl bg-white rounded overflow-hidden shadow-composite border border-dashed border-border-default p-2">
-          {/* Using a placeholder embed or iframe for the PDF viewer. In a real scenario, this would point to the PDF. */}
           <iframe 
-            src="/resume/heverton-resume.pdf.pdf" 
+            src="/resume/heverton-resume.pdf" 
             className="w-full aspect-[1/1.4] rounded bg-white"
             title="Resume"
           />
