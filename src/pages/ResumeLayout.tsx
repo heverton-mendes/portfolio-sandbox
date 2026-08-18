@@ -32,7 +32,7 @@ export default function ResumeLayout() {
         </p>
         
         <a 
-          href="/resume/heverton-resume.pdf" 
+          href="/resume/Heverton-Mendes-Resume.pdf" 
           download="Heverton-Mendes-Resume.pdf"
           className="inline-flex items-center gap-2 bg-surface border border-border-default hover:bg-surface-elevated text-text-primary px-4 py-2 rounded mb-8 transition-colors text-sm font-ui"
         >
@@ -41,7 +41,7 @@ export default function ResumeLayout() {
 
         <div className="w-full max-w-4xl bg-white rounded overflow-hidden shadow-composite border border-dashed border-border-default p-2">
           <iframe 
-            src="/resume/heverton-resume.pdf" 
+            src="/resume/Heverton-Mendes-Resume.pdf" 
             className="w-full aspect-[1/1.4] rounded bg-white"
             title="Resume"
           />
