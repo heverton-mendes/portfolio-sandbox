@@ -21,6 +21,8 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true
+    "noUnusedLocals": false,         /* <-- ADICIONE ESTA LINHA */
+    "noUnusedParameters": false      /* <-- E ESTA LINHA */
   },
   "include": ["src"]
 }
