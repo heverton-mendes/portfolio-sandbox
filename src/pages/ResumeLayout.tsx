@@ -33,32 +33,32 @@ export default function ResumeLayout() {
         
         {/* Botão de Download */}
         <button
-  type="button"
-  onClick={async () => {
-    const url = language === 'en' ? "/resume-en.pdf" : "/resume-pt.pdf";
-    const fileName = language === 'en' ? "Heverton_Mendes_Resume.pdf" : "Heverton_Mendes_Curriculo.pdf";
-    
-    try {
-      const response = await fetch(url);
-      const blob = await response.blob();
-      const blobUrl = window.URL.createObjectURL(blob);
-      
-      const link = document.createElement('a');
-      link.href = blobUrl;
-      link.download = fileName;
-      document.body.appendChild(link);
-      link.click();
-      
-      document.body.removeChild(link);
-      window.URL.revokeObjectURL(blobUrl);
-    } catch (error) {
-      console.error("Erro ao baixar o arquivo:", error);
-    }
-  }}
-  className="..." // (mantenha as classes CSS originais do seu botão aqui)
->
-  {/* Conteúdo do botão (ícone e texto) */}
-</button>
+          type="button"
+          onClick={async () => {
+            const url = language === 'en' ? "/resume-en.pdf" : "/resume-pt.pdf";
+            const fileName = language === 'en' ? "Heverton_Mendes_Resume.pdf" : "Heverton_Mendes_Curriculo.pdf";
+            
+            try {
+              const response = await fetch(url);
+              const blob = await response.blob();
+              const blobUrl = window.URL.createObjectURL(blob);
+              
+              const link = document.createElement('a');
+              link.href = blobUrl;
+              link.download = fileName;
+              document.body.appendChild(link);
+              link.click();
+              
+              document.body.removeChild(link);
+              window.URL.revokeObjectURL(blobUrl);
+            } catch (error) {
+              console.error("Erro ao baixar o arquivo:", error);
+            }
+          }}
+          className="inline-flex items-center gap-2 bg-surface border border-border-default hover:bg-surface-elevated text-text-primary px-4 py-2 rounded mb-8 transition-colors text-sm font-ui cursor-pointer"
+        >
+          <FaDownload className="text-accent-amber" /> {t.download}
+        </button>
 
         {/* Visualizador (iframe) */}
         <div className="w-full max-w-4xl bg-white rounded overflow-hidden shadow-composite border border-dashed border-border-default p-2">
