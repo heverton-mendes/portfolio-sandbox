@@ -38,13 +38,22 @@ export function ContactMe() {
             </a>
           ))}
 
-          <a 
-  href={language === 'en' ? "/resume-en.pdf" : "/resume-pt.pdf"}
-  download={language === 'en' ? "Heverton_Mendes_Resume.pdf" : "Heverton_Mendes_Curriculo.pdf"}
-  className="inline-flex items-center gap-2 bg-surface text-text-primary px-3 py-1.5 rounded border border-border-default hover:bg-surface-elevated transition-colors font-ui text-xs"
+          <button
+  type="button"
+  onClick={() => {
+    const url = language === 'en' ? "/resume-en.pdf" : "/resume-pt.pdf";
+    const fileName = language === 'en' ? "Heverton_Mendes_Resume.pdf" : "Heverton_Mendes_Curriculo.pdf";
+    const link = document.createElement('a');
+    link.href = url;
+    link.setAttribute('download', fileName);
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }}
+  className="inline-flex items-center gap-2 bg-surface text-text-primary px-3 py-1.5 rounded border border-border-default hover:bg-surface-elevated transition-colors font-ui text-xs cursor-pointer"
 >
   <FaFileAlt /> {language === 'en' ? 'Resume' : 'Currículo'}
-</a>
+</button>
         </div>
       </div>
     </section>

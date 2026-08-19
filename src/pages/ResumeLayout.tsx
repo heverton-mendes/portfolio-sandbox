@@ -32,13 +32,22 @@ export default function ResumeLayout() {
         </p>
         
         {/* Botão de Download */}
-        <a 
-  href={language === 'en' ? "/resume-en.pdf" : "/resume-pt.pdf"}
-  download={language === 'en' ? "Heverton_Mendes_Resume.pdf" : "Heverton_Mendes_Curriculo.pdf"}
-  className="inline-flex items-center gap-2 bg-surface border border-border-default hover:bg-surface-elevated text-text-primary px-4 py-2 rounded mb-8 transition-colors text-sm font-ui"
+        <button
+  type="button"
+  onClick={() => {
+    const url = language === 'en' ? "/resume-en.pdf" : "/resume-pt.pdf";
+    const fileName = language === 'en' ? "Heverton_Mendes_Resume.pdf" : "Heverton_Mendes_Curriculo.pdf";
+    const link = document.createElement('a');
+    link.href = url;
+    link.setAttribute('download', fileName);
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }}
+  className="inline-flex items-center gap-2 bg-surface border border-border-default hover:bg-surface-elevated text-text-primary px-4 py-2 rounded mb-8 transition-colors text-sm font-ui cursor-pointer"
 >
   <FaDownload className="text-accent-amber" /> {t.download}
-</a>
+</button>
 
         {/* Visualizador (iframe) */}
         <div className="w-full max-w-4xl bg-white rounded overflow-hidden shadow-composite border border-dashed border-border-default p-2">
