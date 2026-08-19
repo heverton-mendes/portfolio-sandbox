@@ -39,7 +39,7 @@ export function ContactMe() {
           ))}
 
           <a 
-            href={language === 'en' ? "/resume/heverton-resume-en.pdf" : "/resume/heverton-resume-pt.pdf"}
+            href={language === 'en' ? "/resume/heverton-mendes-resume-en.pdf" : "/resume/heverton-mendes-resume-pt.pdf"}
             download={language === 'en' ? "Heverton-Mendes-Resume-EN.pdf" : "Heverton-Mendes-Curriculo-PT.pdf"}
             className="inline-flex items-center gap-2 bg-surface text-text-primary px-3 py-1.5 rounded border border-border-default hover:bg-surface-elevated transition-colors font-ui text-xs"
           >
