@@ -33,12 +33,12 @@ export default function ResumeLayout() {
         
         {/* Botão de Download */}
         <a 
-          href={language === 'en' ? "/resume-en.pdf" : "/resume-pt.pdf"}
-          download={language === 'en' ? "Heverton-Mendes-Resume-EN.pdf" : "Heverton-Mendes-Curriculo-PT.pdf"}
-          className="inline-flex items-center gap-2 bg-surface border border-border-default hover:bg-surface-elevated text-text-primary px-4 py-2 rounded mb-8 transition-colors text-sm font-ui"
-        >
-          <FaDownload className="text-accent-amber" /> {t.download}
-        </a>
+  href={language === 'en' ? "/resume-en.pdf" : "/resume-pt.pdf"}
+  download={language === 'en' ? "Heverton_Mendes_Resume.pdf" : "Heverton_Mendes_Curriculo.pdf"}
+  className="inline-flex items-center gap-2 bg-surface border border-border-default hover:bg-surface-elevated text-text-primary px-4 py-2 rounded mb-8 transition-colors text-sm font-ui"
+>
+  <FaDownload className="text-accent-amber" /> {t.download}
+</a>
 
         {/* Visualizador (iframe) */}
         <div className="w-full max-w-4xl bg-white rounded overflow-hidden shadow-composite border border-dashed border-border-default p-2">

@@ -39,12 +39,12 @@ export function ContactMe() {
           ))}
 
           <a 
-            href={language === 'en' ? "/resume-en.pdf" : "/resume-pt.pdf"}
-            download={language === 'en' ? "Heverton-Mendes-Resume-EN.pdf" : "Heverton-Mendes-Curriculo-PT.pdf"}
-            className="inline-flex items-center gap-2 bg-surface text-text-primary px-3 py-1.5 rounded border border-border-default hover:bg-surface-elevated transition-colors font-ui text-xs"
-          >
-            <FaFileAlt /> {language === 'en' ? 'Resume' : 'Currículo'}
-          </a>
+  href={language === 'en' ? "/resume-en.pdf" : "/resume-pt.pdf"}
+  download={language === 'en' ? "Heverton_Mendes_Resume.pdf" : "Heverton_Mendes_Curriculo.pdf"}
+  className="inline-flex items-center gap-2 bg-surface text-text-primary px-3 py-1.5 rounded border border-border-default hover:bg-surface-elevated transition-colors font-ui text-xs"
+>
+  <FaFileAlt /> {language === 'en' ? 'Resume' : 'Currículo'}
+</a>
         </div>
       </div>
     </section>
