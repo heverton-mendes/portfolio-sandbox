@@ -33,7 +33,7 @@ export default function ResumeLayout() {
         
         {/* Botão de Download */}
         <a 
-          href={language === 'en' ? "/resume/heverton-mendes-resume-en.pdf" : "/resume/heverton-mendes-resume-pt.pdf"}
+          href={language === 'en' ? "/resume-en.pdf" : "/resume-pt.pdf"}
           download={language === 'en' ? "Heverton-Mendes-Resume-EN.pdf" : "Heverton-Mendes-Curriculo-PT.pdf"}
           className="inline-flex items-center gap-2 bg-surface border border-border-default hover:bg-surface-elevated text-text-primary px-4 py-2 rounded mb-8 transition-colors text-sm font-ui"
         >
@@ -43,7 +43,7 @@ export default function ResumeLayout() {
         {/* Visualizador (iframe) */}
         <div className="w-full max-w-4xl bg-white rounded overflow-hidden shadow-composite border border-dashed border-border-default p-2">
           <iframe 
-            src={language === 'en' ? "/resume/heverton-mendes-resume-en.pdf" : "/resume/heverton-mendes-resume-pt.pdf"}
+            src={language === 'en' ? "/resume-en.pdf" : "/resume-pt.pdf"}
             className="w-full aspect-[1/1.4] rounded bg-white"
             title="Resume"
           />
