@@ -40,19 +40,30 @@ export function ContactMe() {
 
           <button
   type="button"
-  onClick={() => {
+  onClick={async () => {
     const url = language === 'en' ? "/resume-en.pdf" : "/resume-pt.pdf";
     const fileName = language === 'en' ? "Heverton_Mendes_Resume.pdf" : "Heverton_Mendes_Curriculo.pdf";
-    const link = document.createElement('a');
-    link.href = url;
-    link.setAttribute('download', fileName);
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
+    
+    try {
+      const response = await fetch(url);
+      const blob = await response.blob();
+      const blobUrl = window.URL.createObjectURL(blob);
+      
+      const link = document.createElement('a');
+      link.href = blobUrl;
+      link.download = fileName;
+      document.body.appendChild(link);
+      link.click();
+      
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(blobUrl);
+    } catch (error) {
+      console.error("Erro ao baixar o arquivo:", error);
+    }
   }}
-  className="inline-flex items-center gap-2 bg-surface text-text-primary px-3 py-1.5 rounded border border-border-default hover:bg-surface-elevated transition-colors font-ui text-xs cursor-pointer"
+  className="..." // (mantenha as classes CSS originais do seu botão aqui)
 >
-  <FaFileAlt /> {language === 'en' ? 'Resume' : 'Currículo'}
+  {/* Conteúdo do botão (ícone e texto) */}
 </button>
         </div>
       </div>
