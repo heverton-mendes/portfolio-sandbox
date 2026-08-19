@@ -8,17 +8,34 @@ export function Navbar() {
   const path = location.pathname;
   const { language, toggleLanguage } = useI18n();
 
+  // Dicionário de tradução dos links da navbar
+  const navText = {
+    en: {
+      home: 'Home',
+      projects: 'Projects',
+      uses: 'Uses',
+      resume: 'Resume',
+    },
+    pt: {
+      home: 'Início',
+      projects: 'Projetos',
+      uses: 'Uso',
+      resume: 'Currículo',
+    }
+  };
+
+  const t = navText[language];
+
   return (
-    
     <nav className="fixed bottom-4 md:absolute md:top-6 md:bottom-auto left-1/2 -translate-x-1/2 z-50 w-full max-w-fit px-4">
       <div className="bg-surface/80 backdrop-blur-xl border border-border-default rounded-full px-4 md:px-6 py-2.5 md:py-3 flex items-center justify-between shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
         
-        {/* Links da navegação */}
+        {/* Links da navegação com as variáveis traduzidas */}
         <div className="flex items-center gap-3 md:gap-6 text-[13px] md:text-sm font-ui font-medium">
-          <Link to="/" className={`${path === '/' ? 'text-text-primary border-b-2 border-border-default pb-0.5' : 'text-text-secondary'} hover:text-text-primary transition-colors`}>Home</Link>
-          <Link to="/projects" className={`${path === '/projects' ? 'text-text-primary border-b-2 border-border-default pb-0.5' : 'text-text-secondary'} hover:text-text-primary transition-colors`}>Projects</Link>
-          <Link to="/uses" className={`${path === '/uses' ? 'text-text-primary border-b-2 border-border-default pb-0.5' : 'text-text-secondary'} hover:text-text-primary transition-colors`}>Uses</Link>
-          <Link to="/resume" className={`${path === '/resume' ? 'text-text-primary border-b-2 border-border-default pb-0.5' : 'text-text-secondary'} hover:text-text-primary transition-colors`}>Resume</Link>
+          <Link to="/" className={`${path === '/' ? 'text-text-primary border-b-2 border-border-default pb-0.5' : 'text-text-secondary'} hover:text-text-primary transition-colors`}>{t.home}</Link>
+          <Link to="/projects" className={`${path === '/projects' ? 'text-text-primary border-b-2 border-border-default pb-0.5' : 'text-text-secondary'} hover:text-text-primary transition-colors`}>{t.projects}</Link>
+          <Link to="/uses" className={`${path === '/uses' ? 'text-text-primary border-b-2 border-border-default pb-0.5' : 'text-text-secondary'} hover:text-text-primary transition-colors`}>{t.uses}</Link>
+          <Link to="/resume" className={`${path === '/resume' ? 'text-text-primary border-b-2 border-border-default pb-0.5' : 'text-text-secondary'} hover:text-text-primary transition-colors`}>{t.resume}</Link>
         </div>
 
         {/* --- VISUAL MOBILE --- */}
