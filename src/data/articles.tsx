@@ -200,6 +200,100 @@ export const articlesData: ArticleContent = {
     ),
   },
 
+  'open-finance': {
+    en: (
+      <div className="space-y-6 text-zinc-300 font-ui text-[15px] leading-relaxed">
+        <p>
+          During my tenure as a Product Designer in digital financial products, I participated in the evolution of experiences related to the payments and Open Finance ecosystem. Open Finance represents one of the most complex scenarios for financial digital products because it combines layers that are normally invisible to the customer: regulations, business rules, system integrations, security, technical dependencies, and cross-product journeys.
+        </p>
+        <p>
+          Beyond building new features, the work involved a recurring challenge in large-scale tech products: modernizing legacy experiences built on previous product iterations and older component libraries, while ensuring full consistency, accessibility, and improved usability.
+        </p>
+
+        <h3 className="text-xl font-bold text-white mt-10 mb-4">The Challenge: Balancing Modernization and Ecosystem Complexity</h3>
+        <p>
+          The payments ecosystem was in constant motion due to regulatory shifts, technological advancements, and evolving customer needs. The work required balancing two parallel fronts:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li><strong className="text-zinc-100">Experience Modernization:</strong> Updating components, adapting to new visual guidelines, improving consistency across desktop and mobile journeys.</li>
+          <li><strong className="text-zinc-100">Ecosystem Complexity:</strong> Navigating regulatory compliance (Central Bank guidelines), technical limitations, and cross-functional dependencies.</li>
+        </ul>
+        <p className="italic text-zinc-400">
+          The core question was: How to modernize existing experiences and design new solutions while keeping things radically simple for the customer in a highly complex environment?
+        </p>
+
+        <h3 className="text-xl font-bold text-white mt-10 mb-4">Role & Cross-Functional Approach</h3>
+        <p>
+          Operating within the payments-focused Open Finance front, my scope connected User Needs + Business Goals + Technology + Regulation + Design System. Key activities included:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li><strong className="text-zinc-100">Journey Mapping & Architecture:</strong> Analyzing current desktop/mobile flows, understanding Central Bank experience guidelines, and assessing technical impacts.</li>
+          <li><strong className="text-zinc-100">Legacy Modernization:</strong> Auditing existing interfaces, adapting them to new Design System components, and reviewing interactions without breaking continuity for active users.</li>
+          <li><strong className="text-zinc-100">Collaborative Alignment:</strong> Bridging Product, Engineering, Business, Research, and specialized squads (such as Data and Payments) to prevent isolated silos and build a cohesive ecosystem vision.</li>
+        </ul>
+
+        <h3 className="text-xl font-bold text-white mt-10 mb-4">The Role of Design in Regulated Products</h3>
+        <p>
+          In regulated financial environments, the biggest challenge is rarely drawing a new screen. It is answering questions like: How do you explain a feature the customer has never seen before? How do you build trust in automated actions? How do you balance innovation with tight security regulations? Design acts as the translation layer between intricate systems and human beings.
+        </p>
+
+        <h3 className="text-xl font-bold text-white mt-10 mb-4">Key Learnings</h3>
+        <p>
+          Working with Open Finance reinforced a core conviction: the more complex the system behind a product, the simpler the front-end experience must feel. 
+        </p>
+        <p className="p-4 border-l-4 border-zinc-500 bg-zinc-900/50 mt-6 italic">
+          Designing complex products isn't just about creating brand-new solutions. It is about understanding what already exists, finding viable paths for evolution, and turning heavy systemic rules into human experiences.
+        </p>
+      </div>
+    ),
+    
+    pt: (
+      <div className="space-y-6 text-zinc-300 font-ui text-[15px] leading-relaxed">
+        <p>
+          Durante minha atuação como Product Designer em produtos financeiros digitais, participei da evolução de experiências relacionadas ao ecossistema de pagamentos e Open Finance. O Open Finance representa um dos cenários mais complexos para produtos digitais, pois combina camadas que normalmente ficam invisíveis para o cliente: regulamentações, regras de negócio, integrações entre sistemas, segurança e dependências técnicas.
+        </p>
+        <p>
+          Além de construir novas soluções, o trabalho envolvia um desafio recorrente: modernizar jornadas legadas. Parte das experiências funcionava em ambientes desktop e mobile construídos em versões anteriores, utilizando componentes antigos. Com a evolução do Design System, surgiu a necessidade de atualizar essas jornadas mantendo consistência, acessibilidade e fluidez.
+        </p>
+
+        <h3 className="text-xl font-bold text-white mt-10 mb-4">O Desafio: Complexidade Ecossistêmica e Modernização</h3>
+        <p>
+          O ecossistema estava em constante transformação impulsionado por mudanças regulatórias e novas necessidades dos clientes. O trabalho exigia equilibrar duas frentes simultâneas:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li><strong className="text-zinc-100">Modernização Visual e Estrutural:</strong> Atualização de componentes, adaptação a novos padrões e refinamento de jornadas desktop e mobile.</li>
+          <li><strong className="text-zinc-100">Navegação Regulatória:</strong> Atendimento estrito aos requisitos do Guia de Experiência do Banco Central, limitantes técnicos e alinhamento entre múltiplas áreas.</li>
+        </ul>
+        <p className="italic text-zinc-400">
+          A pergunta central era: <em>Como modernizar experiências existentes e criar novas soluções mantendo simplicidade para o cliente em um ambiente altamente complexo?</em>
+        </p>
+
+        <h3 className="text-xl font-bold text-white mt-10 mb-4">Atuação e Colaboração Cross-Functional</h3>
+        <p>
+          Atuei na frente de Open Finance conectando Cliente, Negócio, Tecnologia, Regulamentação e Design System. Minhas principais frentes envolveram:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li><strong className="text-zinc-100">Análise de Jornadas:</strong> Compreensão profunda das regras do Banco Central, mapeamento de fluxos atuais e levantamento de impactos técnicos.</li>
+          <li><strong className="text-zinc-100">Evolução de Legados:</strong> Migração de interfaces antigas para os novos padrões do Design System sem quebrar a continuidade para quem já utilizava o serviço.</li>
+          <li><strong className="text-zinc-100">Alinhamento Sistêmico:</strong> Trabalho colaborativo com Produto, Engenharia e frentes irmãs (como Dados e Pagamentos), garantindo que o design funcionasse de forma integrada e não em silos isolados.</li>
+        </ul>
+
+        <h3 className="text-xl font-bold text-white mt-10 mb-4">O Papel do Design em Produtos Regulados</h3>
+        <p>
+          Em produtos regulados, o maior desafio não é desenhar interfaces, mas responder a perguntas difíceis: <em>Como explicar uma funcionalidade inédita? Como gerar confiança em fluxos automatizados? Como equilibrar inovação e rigor normativo?</em> O Design atua aqui como uma camada essencial de tradução entre a engrenagem sistêmica e a percepção humana.
+        </p>
+
+        <h3 className="text-xl font-bold text-white mt-10 mb-4">Aprendizados e Reflexão Final</h3>
+        <p>
+          Trabalhar com Open Finance consolidou uma visão definitiva na minha trajetória: quanto mais complexo é o sistema por trás de um produto, mais simples e intuitiva deve ser a experiência na ponta.
+        </p>
+        <p className="p-4 border-l-4 border-zinc-500 bg-zinc-900/50 mt-6 italic">
+          Projetar produtos complexos não é apenas criar novas soluções do zero. É compreender o legado, desenhar caminhos viáveis de evolução e transformar a alta complexidade técnica em experiências humanas e confiáveis.
+        </p>
+      </div>
+    ),
+  },
+
   'receipts': {
     en: (
       <div className="space-y-6 text-zinc-300 font-ui text-[15px] leading-relaxed">
