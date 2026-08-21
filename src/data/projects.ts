@@ -46,7 +46,7 @@ export const featuredProjects: ProjectData[] = [
   tech: ['DesignOps', 'Figma', 'Governance', 'Information Architecture'],
   github: '',
   live: '', // Você pode colocar o link do Medium aqui quando escrever o artigo
-  banner: '/images/projects/design-governance.png', // Substitua pelo caminho da sua imagem
+  banner: '/images/projects/design-governance.jpg', // Substitua pelo caminho da sua imagem
   isPrivate: true,
 }
 

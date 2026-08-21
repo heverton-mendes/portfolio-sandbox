@@ -36,7 +36,7 @@ export function ProjectCard({ project, language }: { project: ProjectData, langu
   const desc = typeof project.desc === 'string' ? project.desc : project.desc[language];
 
   return (
-    <div className="group flex flex-col md:flex-row gap-6 p-5 border border-dashed border-zinc-800 rounded-xl bg-transparent hover:border-zinc-600 hover:bg-[#131315] transition-all duration-300">
+    <div className="group flex flex-col md:flex-row items-start gap-6 p-5 border border-dashed border-zinc-800 rounded-xl bg-transparent hover:border-zinc-600 hover:bg-[#131315] transition-all duration-300">
       
       <div className="w-full md:w-[40%] shrink-0">
         <div className="relative rounded-lg overflow-hidden border border-zinc-800 aspect-[16/10] bg-[#111111]">
@@ -49,7 +49,7 @@ export function ProjectCard({ project, language }: { project: ProjectData, langu
         </div>
       </div>
       
-      <div className="flex-1 flex flex-col justify-between py-1">
+      <div className="flex-1 flex flex-col justify-between py-1 w-full">
         <div>
           <div className="flex flex-wrap justify-between items-start gap-4 mb-3">
             
@@ -59,28 +59,28 @@ export function ProjectCard({ project, language }: { project: ProjectData, langu
             
             <div className="flex gap-2">
               {project.live && project.live.trim() !== '' && (
-  <a href={project.live} target="_blank" rel="noreferrer" className="shadow-composite items-center flex font-medium justify-center bg-[rgb(26,_27,_28)] text-zinc-300 hover:text-white text-[12px] gap-[6px] pt-1.5 pr-2.5 pb-1.5 pl-2.5 rounded-md font-ui transition-all hover:bg-[#27272a]">
-    <FaExternalLinkAlt className="text-[11px]" /> {language === 'en' ? 'Case Study' : 'Ler Case'}
-  </a>
-)}
+                <a href={project.live} target="_blank" rel="noreferrer" className="shadow-composite items-center flex font-medium justify-center bg-[rgb(26,_27,_28)] text-zinc-300 hover:text-white text-[12px] gap-[6px] pt-1.5 pr-2.5 pb-1.5 pl-2.5 rounded-md font-ui transition-all hover:bg-[#27272a]">
+                  <FaExternalLinkAlt className="text-[11px]" /> {language === 'en' ? 'Case Study' : 'Ler Case'}
+                </a>
+              )}
               
               {project.github && project.github.trim() !== '' && (
-  <a href={project.github} target="_blank" rel="noreferrer" className="shadow-composite items-center flex font-medium justify-center bg-[rgb(26,_27,_28)] text-zinc-300 hover:text-white text-[12px] gap-[6px] pt-1.5 pr-2.5 pb-1.5 pl-2.5 rounded-md font-ui transition-all hover:bg-[#27272a]">
-    <FaGithub className="text-[13px]" /> GitHub
-  </a>
-)}
+                <a href={project.github} target="_blank" rel="noreferrer" className="shadow-composite items-center flex font-medium justify-center bg-[rgb(26,_27,_28)] text-zinc-300 hover:text-white text-[12px] gap-[6px] pt-1.5 pr-2.5 pb-1.5 pl-2.5 rounded-md font-ui transition-all hover:bg-[#27272a]">
+                  <FaGithub className="text-[13px]" /> GitHub
+                </a>
+              )}
             </div>
           </div>
           
-          <p className="text-[13.5px] text-zinc-400 leading-relaxed mb-4 line-clamp-3 font-ui group-hover:text-zinc-300 transition-colors">
+          <p className="text-[13.5px] text-zinc-400 leading-relaxed mb-4 whitespace-pre-line font-ui group-hover:text-zinc-300 transition-colors">
             {desc}
           </p>
         </div>
         
         <div>
           <p className="text-[12px] font-medium text-zinc-500 mb-2 font-ui">
-  {language === 'en' ? 'Technologies Used:' : 'Tecnologias utilizadas:'}
-</p>
+            {language === 'en' ? 'Technologies Used:' : 'Tecnologias utilizadas:'}
+          </p>
           <div className="flex flex-wrap gap-2">
             {project.tech.map((t, i) => (
               <span key={i} className="text-[11px] font-medium text-zinc-300 bg-[rgb(26,_27,_28)] shadow-sm px-2 py-1 rounded-[4px] border border-zinc-800/50 font-ui group-hover:border-zinc-700 transition-colors">
