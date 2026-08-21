@@ -21,7 +21,7 @@ export const featuredProjects: ProjectData[] = [
     tech: ['UX/UI', 'Information Architecture', 'Journey Mapping'],
     github: '',
     live: 'https://hevertondaniel.medium.com/transformando-uma-tela-de-atalhos-em-uma-experiência-de-gestão-financeira-dbc34fd58a49',
-    banner: '/images/projects/payments-hub.png.png',
+    banner: '/images/projects/payments-hub.jpg',
     isPrivate: true,
   },
   {
@@ -33,7 +33,7 @@ export const featuredProjects: ProjectData[] = [
     tech: ['UX/UI', 'Prototyping', 'Accessibility'],
     github: '',
     live: 'https://hevertondaniel.medium.com/traduzindo-complexidade-regulatória-em-experiências-digitais-b3123f7a52c9',
-    banner: '/images/projects/open-finance.png.png',
+    banner: '/images/projects/open-finance.jpg',
     isPrivate: true,
   },
 

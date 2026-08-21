@@ -14,8 +14,8 @@ export default function ProjectsLayout() {
         {/* Aviso de Confidencialidade */}
         <p className="text-[11.5px] text-zinc-500 italic mt-2 font-ui tracking-wide">
           {language === 'en' 
-            ? 'Diagrams below are reconstructed for confidentiality — not original product screens.' 
-            : 'Os diagramas abaixo foram reconstruídos por confidencialidade — não são telas originais do produto.'}
+            ? 'Project visuals are conceptual representations to protect confidentiality — not original product screens.' 
+            : 'Os visuais dos projetos são representações conceituais para proteger a confidencialidade — não são telas originais.'}
         </p>
       </div>
       
