@@ -110,6 +110,96 @@ export const articlesData: ArticleContent = {
     ),
   },
 
+  'payments-hub': {
+    en: (
+      <div className="space-y-6 text-zinc-300 font-ui text-[15px] leading-relaxed">
+        <p>
+          Within a large-scale financial institution, I led the evolution of a digital payment experience dedicated to helping customers organize their financial routines. Originally, "Meus Pagamentos" (My Payments) functioned primarily as a shortcut screen—a simple gateway to disparate payment features.
+        </p>
+        <p>
+          Despite its basic structure, it handled a significant volume of monthly accesses, turning it into a strategic leverage point. The challenge shifted from merely facilitating shortcuts to transforming an entry point into a comprehensive financial organization hub.
+        </p>
+
+        <h3 className="text-xl font-bold text-white mt-10 mb-4">The Problem: A Fragmented Ecosystem</h3>
+        <p>
+          Customers had to navigate disconnected paths to manage their financial commitments, facing issues such as multiple journeys for different payment types, a lack of consolidated overview, and poor visibility over what was paid, pending, or scheduled. Common customer pain points included:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li><strong className="text-zinc-100">Cognitive Overload:</strong> "I get lost in all the payment options."</li>
+          <li><strong className="text-zinc-100">Lack of Predictability:</strong> "I don't know what's already scheduled versus what is still due."</li>
+          <li><strong className="text-zinc-100">Proactive Friction:</strong> "Bills feel like something I have to hunt down rather than things that surface automatically."</li>
+        </ul>
+
+        <h3 className="text-xl font-bold text-white mt-10 mb-4">Solution & Scope of Work</h3>
+        <p>
+          Leveraging behavioral data and customer research, we pivoted toward a unified vision: the <strong>Payments Hub</strong>. My hands-on scope as Product Designer covered key strategic initiatives:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li><strong className="text-zinc-100">Conversational Assistant:</strong> Assisted in designing and accelerating the rollout of an integrated conversational experience, mapping multi-channel touchpoints (WhatsApp, email, notifications).</li>
+          <li><strong className="text-zinc-100">Commitments & Batch Payments:</strong> Modernized the calendar and bill management experience, introducing batch payments so users could settle multiple accounts in a single, seamless flow.</li>
+          <li><strong className="text-zinc-100">Dynamic Smart Automations ("Facilite seu dia a dia"):</strong> Designed proactive carousels suggesting custom automations, Pix keys setup, and recurring transfer options based on user context.</li>
+        </ul>
+
+        <h3 className="text-xl font-bold text-white mt-10 mb-4">Cross-Functional Collaboration & Governance</h3>
+        <p>
+          Operating at the intersection of business goals, user needs, and engineering constraints, I collaborated closely with Product, Content/UX Writing, and specialized squads (Pix, Autodebit, Limits). Every flow and documentation artifact served as a shared source of truth across disciplines, adopting the latest versions of the Design System.
+        </p>
+
+        <h3 className="text-xl font-bold text-white mt-10 mb-4">Impact & Metrics</h3>
+        <p>
+          The success of the experience was tracked across usage dimensions, feedback loops, and customer satisfaction metrics. During my tenure, Customer Satisfaction (Likert scale) rose from <strong>33% to 59%</strong> within an ecosystem serving over 10 million monthly users.
+        </p>
+        <p className="p-4 border-l-4 border-zinc-500 bg-zinc-900/50 mt-6 italic">
+          This project reinforced that design in financial products is about building bridges between Client, Business, Technology, and Experience — turning friction into clarity.
+        </p>
+      </div>
+    ),
+    
+    pt: (
+      <div className="space-y-6 text-zinc-300 font-ui text-[15px] leading-relaxed">
+        <p>
+          Dentro de uma grande instituição financeira, atuei na evolução da experiência de pagamentos digitais, em uma frente responsável por ajudar clientes a organizarem sua rotina financeira. Antes dessa evolução, a área de "Meus Pagamentos" funcionava majoritariamente como uma tela de atalhos — uma porta de entrada simples para diferentes funcionalidades dispersas.
+        </p>
+        <p>
+          Apesar da simplicidade inicial, o alto volume de acessos mensais transformou a tela em um ponto ultraestratégico. O desafio deixou de ser apenas facilitar cliques e passou a ser: <em>como transformar um ponto de entrada em um hub onde o cliente consegue visualizar, organizar e acompanhar sua vida financeira?</em>
+        </p>
+
+        <h3 className="text-xl font-bold text-white mt-10 mb-4">O Problema: Ecossistema Fragmentado</h3>
+        <p>
+          Os clientes precisavam navegar por caminhos desconectados para encontrar informações sobre seus compromissos financeiros. As principais dores mapeadas incluíam múltiplos fluxos para diferentes tipos de pagamento, baixa consolidação de compromissos e dificuldade em prever o que estava pago, pendente ou programado. Falas recorrentes dos clientes refletiam isso:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li><strong className="text-zinc-100">Falta de Clareza:</strong> "Eu me perco nas opções de pagamento."</li>
+          <li><strong className="text-zinc-100">Previsibilidade:</strong> "Não sei direito o que já está programado e o que ainda falta pagar."</li>
+          <li><strong className="text-zinc-100">Proatividade:</strong> "Parece que eu tenho que procurar minhas contas, em vez delas aparecerem para mim."</li>
+        </ul>
+
+        <h3 className="text-xl font-bold text-white mt-10 mb-4">Solução e Escopo de Atuação</h3>
+        <p>
+          Com base em dados de uso e pesquisas, estruturamos a visão do <strong>Hub de Pagamentos</strong>. Minha atuação como Product Designer envolveu frentes críticas de entrega:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li><strong className="text-zinc-100">Assistente Conversacional:</strong> Auxiliei na criação e aceleração do lançamento de um assistente conversacional, mapeando interações integradas com canais de comunicação (WhatsApp, e-mail, notificações).</li>
+          <li><strong className="text-zinc-100">Gestão de Compromissos e Pagamento em Lote:</strong> Conduzi o handoff e a modernização da área de compromissos e calendário, estruturando a jornada de pagamento em lote para que o cliente pudesse quitar múltiplos boletos em um único fluxo.</li>
+          <li><strong className="text-zinc-100">Automações Dinâmicas ("Facilite seu dia a dia"):</strong> Antecipei a primeira versão de um carrossel dinâmico baseado no momento do cliente, sugerindo atalhos inteligentes (criação de chaves Pix, automação de pagamentos recorrentes).</li>
+        </ul>
+
+        <h3 className="text-xl font-bold text-white mt-10 mb-4">Colaboração e Governança Cross-Functional</h3>
+        <p>
+          Atuei conectando restrições técnicas, regras de negócio e necessidades humanas. Trabalhei lado a lado com Produto, Engenharia e o time de Content/UX Writing, alinhando fluxos às diretrizes atualizadas do Design System do banco.
+        </p>
+
+        <h3 className="text-xl font-bold text-white mt-10 mb-4">Resultados e Impacto nas Métricas</h3>
+        <p>
+          O sucesso da experiência foi acompanhado por meio de dados de uso, pesquisas de percepção e indicadores quantitativos. Durante minha atuação no produto, a Satisfação do Cliente (escala Likert) subiu de <strong>33% para 59%</strong> em um ecossistema com mais de 10 milhões de acessos mensais.
+        </p>
+        <p className="p-4 border-l-4 border-zinc-500 bg-zinc-900/50 mt-6 italic">
+          Este projeto consolidou uma visão essencial: em produtos financeiros complexos, o bom design não decora telas — ele constrói pontes sólidas entre o Cliente, o Negócio e a Tecnologia.
+        </p>
+      </div>
+    ),
+  },
+
   'receipts': {
     en: (
       <div className="space-y-6 text-zinc-300 font-ui text-[15px] leading-relaxed">
