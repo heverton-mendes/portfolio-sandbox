@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { featuredProjects } from '../../data/projects';
 import type { ProjectData } from '../../data/projects';
 import { SectionTitle } from '../ui/SectionTitle';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { useI18n } from '../../context/I18nContext';
 
@@ -32,13 +32,20 @@ export function Projects() {
 }
 
 export function ProjectCard({ project, language }: { project: ProjectData, language: 'en' | 'pt' }) {
+  // Estado que controla se este card específico está expandido ou não
+  const [isExpanded, setIsExpanded] = useState(false);
+  
   const name = typeof project.name === 'string' ? project.name : project.name[language];
   const desc = typeof project.desc === 'string' ? project.desc : project.desc[language];
 
   return (
     <div className="group flex flex-col md:flex-row items-start gap-6 p-5 border border-dashed border-zinc-800 rounded-xl bg-transparent hover:border-zinc-600 hover:bg-[#131315] transition-all duration-300">
       
-      <div className="w-full md:w-[40%] shrink-0">
+      {/* Imagem clicável para expandir */}
+      <div 
+        className="w-full md:w-[40%] shrink-0 cursor-pointer" 
+        onClick={() => setIsExpanded(!isExpanded)}
+      >
         <div className="relative rounded-lg overflow-hidden border border-zinc-800 aspect-[16/10] bg-[#111111]">
           <img 
             src={project.banner || 'https://via.placeholder.com/600x400?text=Project+Image'} 
@@ -53,7 +60,11 @@ export function ProjectCard({ project, language }: { project: ProjectData, langu
         <div>
           <div className="flex flex-wrap justify-between items-start gap-4 mb-3">
             
-            <h3 className="text-[17px] font-semibold text-zinc-200 flex items-center gap-2 font-ui group-hover:text-white transition-colors">
+            {/* Título clicável */}
+            <h3 
+              className="text-[17px] font-semibold text-zinc-200 flex items-center gap-2 font-ui group-hover:text-white transition-colors cursor-pointer"
+              onClick={() => setIsExpanded(!isExpanded)}
+            >
               {name}
             </h3>
             
@@ -72,9 +83,30 @@ export function ProjectCard({ project, language }: { project: ProjectData, langu
             </div>
           </div>
           
-          <p className="text-[13.5px] text-zinc-400 leading-relaxed mb-4 whitespace-pre-line font-ui group-hover:text-zinc-300 transition-colors">
-            {desc}
-          </p>
+          {/* Descrição com sanfona (Accordion) */}
+          <div className="mb-4">
+            <p 
+              className={`text-[13.5px] text-zinc-400 leading-relaxed whitespace-pre-line font-ui group-hover:text-zinc-300 transition-colors cursor-pointer ${isExpanded ? '' : 'line-clamp-3'}`}
+              onClick={() => setIsExpanded(!isExpanded)}
+            >
+              {desc}
+            </p>
+            
+            <button 
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="mt-2 flex items-center gap-1.5 text-[12px] font-ui font-medium text-zinc-500 hover:text-zinc-300 transition-colors"
+            >
+              {isExpanded ? (
+                <>
+                  {language === 'en' ? 'Show less' : 'Mostrar menos'} <FaChevronUp className="text-[10px]" />
+                </>
+              ) : (
+                <>
+                  {language === 'en' ? 'Read more' : 'Ler mais'} <FaChevronDown className="text-[10px]" />
+                </>
+              )}
+            </button>
+          </div>
         </div>
         
         <div>
