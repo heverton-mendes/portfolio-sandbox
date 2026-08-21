@@ -9,8 +9,17 @@ export default function ProjectsLayout() {
 
   return (
     <main className="container-max py-20 min-h-screen">
-      <SectionTitle>/projects</SectionTitle>
-      <div className="flex flex-col gap-6 mt-8">
+      <div className="mb-8">
+        <SectionTitle>/projects</SectionTitle>
+        {/* Aviso de Confidencialidade */}
+        <p className="text-[11.5px] text-zinc-500 italic mt-2 font-ui tracking-wide">
+          {language === 'en' 
+            ? 'Diagrams below are reconstructed for confidentiality — not original product screens.' 
+            : 'Os diagramas abaixo foram reconstruídos por confidencialidade — não são telas originais do produto.'}
+        </p>
+      </div>
+      
+      <div className="flex flex-col gap-6">
         {allProjects.map((project, idx) => (
           <ProjectCard key={idx} project={project} language={language} />
         ))}

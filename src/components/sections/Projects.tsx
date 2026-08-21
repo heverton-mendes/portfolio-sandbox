@@ -11,14 +11,22 @@ export function Projects() {
 
   return (
     <section className="container-max mt-8 mb-8"> 
-      <div className="mb-1">
+      <div className="mb-6"> 
         <SectionTitle>{language === 'en' ? 'My Projects' : 'Meus Projetos'}</SectionTitle>
+        {/* Aviso de Confidencialidade */}
+        <p className="text-[11.5px] text-zinc-500 italic mt-2 font-ui tracking-wide">
+          {language === 'en' 
+            ? 'Diagrams below are reconstructed for confidentiality — not original product screens.' 
+            : 'Os diagramas abaixo foram reconstruídos por confidencialidade — não são telas originais do produto.'}
+        </p>
       </div>
+      
       <div className="flex flex-col gap-6">
         {featuredProjects.map((project, idx) => (
           <ProjectCard key={idx} project={project} language={language} />
         ))}
       </div>
+      
       <div className="mt-8 flex justify-end">
         <Link 
           to="/projects"
