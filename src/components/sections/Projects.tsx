@@ -77,16 +77,8 @@ export function ProjectCard({ project, language }: { project: ProjectData, langu
             </h3>
             
             <div className="flex gap-2">
-              {/* Lista dos slugs que possuem páginas internas criadas no site */}
-              {project.slug && ['design-governance', 'payments-hub', 'open-finance'].includes(project.slug) ? (
-                <Link 
-                  to={`/case/${project.slug}`} 
-                  className="shadow-composite items-center flex font-medium justify-center bg-[rgb(26,_27,_28)] text-zinc-300 hover:text-white text-[12px] gap-[6px] pt-1.5 pr-2.5 pb-1.5 pl-2.5 rounded-md font-ui transition-all hover:bg-[#27272a]"
-                >
-                  {language === 'en' ? 'Read Article' : 'Ler Artigo'}
-                </Link>
-              ) : (
-                /* Para todos os outros (como Uni Imóveis e Comprovantes), abre o Medium em PT e EN */
+              {/* 1. EXCEÇÃO PARA O UNI IMÓVEIS: Sempre abre o link externo (Medium) em PT e EN */}
+              {project.name === 'Uni Imóveis' ? (
                 project.live && project.live.trim() !== '' && (
                   <a 
                     href={project.live} 
@@ -96,6 +88,37 @@ export function ProjectCard({ project, language }: { project: ProjectData, langu
                   >
                     <FaExternalLinkAlt className="text-[11px]" /> {language === 'en' ? 'Read Article' : 'Ler Artigo'}
                   </a>
+                )
+              ) : (
+                /* 2. PARA O DESIGN AT SCALE: Abre sempre a página interna em PT e EN */
+                project.slug === 'design-governance' ? (
+                  <Link 
+                    to={`/case/${project.slug}`} 
+                    className="shadow-composite items-center flex font-medium justify-center bg-[rgb(26,_27,_28)] text-zinc-300 hover:text-white text-[12px] gap-[6px] pt-1.5 pr-2.5 pb-1.5 pl-2.5 rounded-md font-ui transition-all hover:bg-[#27272a]"
+                  >
+                    {language === 'en' ? 'Read Article' : 'Ler Artigo'}
+                  </Link>
+                ) : (
+                  /* 3. PARA OS DEMAIS PROJETOS (Hub, Open Finance, etc.): Segue a regra original (Interno em EN, Medium em PT) */
+                  language === 'en' && project.slug ? (
+                    <Link 
+                      to={`/case/${project.slug}`} 
+                      className="shadow-composite items-center flex font-medium justify-center bg-[rgb(26,_27,_28)] text-zinc-300 hover:text-white text-[12px] gap-[6px] pt-1.5 pr-2.5 pb-1.5 pl-2.5 rounded-md font-ui transition-all hover:bg-[#27272a]"
+                    >
+                      Read Article
+                    </Link>
+                  ) : (
+                    project.live && project.live.trim() !== '' && (
+                      <a 
+                        href={project.live} 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        className="shadow-composite items-center flex font-medium justify-center bg-[rgb(26,_27,_28)] text-zinc-300 hover:text-white text-[12px] gap-[6px] pt-1.5 pr-2.5 pb-1.5 pl-2.5 rounded-md font-ui transition-all hover:bg-[#27272a]"
+                      >
+                        <FaExternalLinkAlt className="text-[11px]" /> Ler Artigo
+                      </a>
+                    )
+                  )
                 )
               )}
               
