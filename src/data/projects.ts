@@ -14,8 +14,8 @@ export const featuredProjects: ProjectData[] = [
   {
     name: 'Hub de Pagamentos',
     desc: {
-      en: "Untangling a fragmented ecosystem. Problem: Features built by different teams at different times. Role & approach: Worked alongside multiple payment teams to map the user journey and information architecture. Impact: Satisfaction (Likert) rose from ~33% to the 59% target on a product with 10M+ monthly users. Learning: A UX decision only counts once it's followed by a real number.",
-      pt: "Desembaraçando um ecossistema fragmentado. Problema: Funcionalidades construídas por times diferentes. Papel e abordagem: Trabalhei com múltiplos times para realizar o mapeamento de jornada e unificar a experiência. Impacto: Satisfação (Likert) subiu de ~33% para a meta de 59% em um app com 10M+ de acessos mensais. Aprendizado: Uma decisão de UX só conta quando seguida por um número real."
+      en: "Untangling a fragmented ecosystem.\n\nPROBLEM: Features built by different teams at different times — customers bounced between disconnected places for one financial task.\n\nROLE & APPROACH: Led journey mapping and information architecture to unify the experience; kept asking whether complexity needed to reach the user at all.\n\nCOLLABORATION: Flows and documentation as shared reference across Design, Product and Engineering.\n\nIMPACT: Satisfaction (Likert) rose from ~33% to the 59% target on a product with 10M+ monthly users — a squad result, not mine alone.\n\nLEARNING: A UX decision only counts once it's followed by a real number.",
+      pt: "Desembaraçando um ecossistema fragmentado.\n\nPROBLEMA: Funcionalidades criadas por times diferentes em momentos diferentes — clientes pulavam entre lugares desconectados para uma mesma tarefa.\n\nPAPEL E ABORDAGEM: Liderança no mapeamento da jornada e arquitetura de informação; questionando sempre se a complexidade precisava chegar ao usuário.\n\nCOLABORAÇÃO: Fluxos e documentação como referência compartilhada entre Design, Produto e Engenharia.\n\nIMPACTO: Satisfação (Likert) subiu de ~33% para a meta de 59% em um produto com mais de 10 milhões de usuários.\n\nAPRENDIZADO: Uma decisão de UX só conta quando é seguida por um número real."
     },
     tech: ['UX/UI', 'Information Architecture', 'Journey Mapping'],
     github: '',
@@ -26,32 +26,32 @@ export const featuredProjects: ProjectData[] = [
   {
     name: 'Open Finance',
     desc: {
-      en: "Making regulation feel simple. Problem: A regulated, technical system — the user only needed to know what to do next. Role & approach: Owned the end-to-end flow design; used prototypes as a negotiation tool before coding. Collaboration: Product, Engineering and Research. Impact: A regulatory flow the squad could stand behind. Learning: Simplicity, inside a regulated system, is a negotiation.",
-      pt: "Tornando a regulação simples. Problema: Um sistema técnico e regulamentado. Papel e abordagem: Fui dono do design de ponta a ponta; usei protótipos como ferramenta de negociação. Colaboração: Produto, Engenharia e Pesquisa. Impacto: Um fluxo regulatório que a squad pôde realmente defender. Aprendizado: Simplicidade, dentro de um sistema regulamentado, é uma negociação."
+      en: "Making regulation feel simple.\n\nPROBLEM: A regulated, technical system — the user only needed to know what to do next, not how it worked underneath.\n\nROLE & APPROACH: Owned the end-to-end flow design; used prototypes as a negotiation tool with the squad before any code was written.\n\nCOLLABORATION: Product, Engineering and Research — balancing user needs against what the system could actually support.\n\nIMPACT: The outcome was a regulatory flow the squad could actually stand behind and implement successfully.\n\nLEARNING: Simplicity, inside a regulated system, is a negotiation — not a redesign.",
+      pt: "Tornando a regulação simples.\n\nPROBLEMA: Um sistema técnico e regulado — o usuário só precisava saber o que fazer a seguir, não como funcionava por baixo.\n\nPAPEL E ABORDAGEM: Liderança no design do fluxo end-to-end; uso de protótipos como ferramenta de negociação com a squad antes de qualquer código.\n\nCOLABORAÇÃO: Produto, Engenharia e Pesquisa — equilibrando necessidades do usuário com o que o sistema suportava.\n\nIMPACTO: A entrega foi um fluxo regulatório que a squad conseguiu apoiar e implementar com sucesso.\n\nAPRENDIZADO: Simplicidade, em um sistema regulado, é negociação — não apenas redesign."
     },
     tech: ['UX/UI', 'Prototyping', 'Accessibility'],
     github: '',
     live: 'https://hevertondaniel.medium.com/traduzindo-complexidade-regulatória-em-experiências-digitais-b3123f7a52c9',
     banner: '/images/projects/open-finance.png.png',
     isPrivate: true,
-  }
-  /* Ocultado temporariamente:
+  },
+
+  
   {
-    name: {
-      en: "Design at Scale & Governance",
-      pt: "Design em Escala & Governança"
-    },
-    desc: {
-      en: "A shared Figma library for mobile products...",
-      pt: "Uma biblioteca Figma compartilhada..."
-    },
-    tech: ['Design Systems', 'Figma', 'Governance'],
-    github: '',
-    live: '',
-    banner: '/images/projects/design-governance.png',
-    isPrivate: true,
-  }
-  */
+  name: 'Design at Scale & Governance',
+  desc: {
+    en: "Transforming Figma from a chaotic tool into a shared infrastructure of knowledge.\n\nPROBLEM: Scattered files, lack of naming standards, and fragmented flows created a 'herculean effort' to locate final screens or understand the context of UX decisions across multiple squads.\n\nROLE & APPROACH: Mapped the team's operational flow and designed a 3-tier Information Architecture (Macro, Meso, Micro) reflecting the Double Diamond process within Figma.\n\nCOLLABORATION: Empowered Product Designers, Service Designers, UX Writers, and Stakeholders with standardized blueprints (Discovery, Handoff, Critiques, Tests) reducing communication noise.\n\nIMPACT: Eliminated cognitive load for starting new initiatives and created instant visibility of project status for leadership without needing alignment meetings.\n\nLEARNING: Figma is not just a UI tool; in large organizations, it becomes a sociotechnical system that requires governance to preserve knowledge.",
+    pt: "Transformando o Figma de uma ferramenta caótica em uma infraestrutura compartilhada de conhecimento.\n\nPROBLEMA: Arquivos dispersos e falta de padrões criavam um esforço gigantesco para localizar telas finais ou entender o contexto de decisões de UX entre várias squads.\n\nPAPEL E ABORDAGEM: Mapeamento do fluxo operacional e criação de uma Arquitetura de Informação em 3 camadas (Macro, Meso, Micro) refletindo o processo de Duplo Diamante dentro do Figma.\n\nCOLABORAÇÃO: Empoderou Designers, UX Writers e Stakeholders com blueprints padronizados (Discovery, Handoff, Critiques, Testes) reduzindo o ruído de comunicação.\n\nIMPACTO: Eliminou a carga cognitiva ao iniciar novas entregas e gerou visibilidade instantânea do status dos projetos para a liderança sem necessidade de reuniões de alinhamento.\n\nAPRENDIZADO: Figma não é só interface; em grandes operações, ele é um sistema sociotécnico que exige governança para preservar conhecimento."
+  },
+  tech: ['DesignOps', 'Figma', 'Governance', 'Information Architecture'],
+  github: '',
+  live: '', // Você pode colocar o link do Medium aqui quando escrever o artigo
+  banner: '/images/projects/design-governance.png', // Substitua pelo caminho da sua imagem
+  isPrivate: true,
+}
+
+
+
 ];
 
 export const additionalProjects: ProjectData[] = [
@@ -69,8 +69,8 @@ export const additionalProjects: ProjectData[] = [
   {
     name: 'Evolução de Comprovantes',
     desc: {
-      en: 'Evolving a critical financial journey to improve clarity and information accessibility after transactions.',
-      pt: 'Evoluindo uma jornada financeira crítica para melhorar a clareza e a acessibilidade da informação após transações.'
+      en: "Evolving a critical financial journey to improve clarity and information accessibility after transactions.\n\nPROBLEM: A legacy experience lacking user behavior data, making it hard for users to find, understand, and organize their payment receipts.\n\nROLE & APPROACH: Mapped current flows and recovered lost historical context to build a modernization vision without losing trust.\n\nCOLLABORATION: Partnered with Product, Engineering, and internal operations to balance UX proposals with technical constraints.\n\nIMPACT: Established a baseline for experience metrics and successfully modernized both the user-facing journey and internal service tools.\n\nLEARNING: Modernizing a product isn't just about the interface; it's about recovering knowledge and negotiating with legacy technology.",
+      pt: "Evoluindo uma jornada financeira crítica para melhorar a clareza e acessibilidade das informações.\n\nPROBLEMA: Uma experiência legada sem dados de comportamento, dificultando que usuários encontrassem e organizassem seus comprovantes.\n\nPAPEL E ABORDAGEM: Mapeamento de fluxos e recuperação de contexto histórico para construir uma visão de modernização sem perder a confiança.\n\nCOLABORAÇÃO: Parceria com Produto, Engenharia e Operações para equilibrar propostas de UX com restrições técnicas.\n\nIMPACTO: Estabeleceu uma base para métricas de experiência e modernizou a jornada do usuário e ferramentas internas.\n\nAPRENDIZADO: Modernizar um produto não é só sobre interface; é sobre recuperar conhecimento e negociar com tecnologia legada."
     },
     tech: ['UX Research', 'UI Design', 'Finance'],
     github: '',
