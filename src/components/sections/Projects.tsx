@@ -77,9 +77,25 @@ export function ProjectCard({ project, language }: { project: ProjectData, langu
             </h3>
             
             <div className="flex gap-2">
-              {project.live && project.live.trim() !== '' && (
-                <a href={project.live} target="_blank" rel="noreferrer" className="shadow-composite items-center flex font-medium justify-center bg-[rgb(26,_27,_28)] text-zinc-300 hover:text-white text-[12px] gap-[6px] pt-1.5 pr-2.5 pb-1.5 pl-2.5 rounded-md font-ui transition-all hover:bg-[#27272a]">
-                  <FaExternalLinkAlt className="text-[11px]" /> {language === 'en' ? 'Case Study' : 'Ler Case'}
+              {/* Botão em INGLÊS - Rota Interna */}
+              {language === 'en' && project.slug && (
+                <Link 
+                  to={`/case/${project.slug}`} 
+                  className="shadow-composite items-center flex font-medium justify-center bg-[rgb(26,_27,_28)] text-zinc-300 hover:text-white text-[12px] gap-[6px] pt-1.5 pr-2.5 pb-1.5 pl-2.5 rounded-md font-ui transition-all hover:bg-[#27272a]"
+                >
+                  Full work case
+                </Link>
+              )}
+
+              {/* Botão em PORTUGUÊS - Medium Externo */}
+              {language === 'pt' && project.live && project.live.trim() !== '' && (
+                <a 
+                  href={project.live} 
+                  target="_blank" 
+                  rel="noreferrer" 
+                  className="shadow-composite items-center flex font-medium justify-center bg-[rgb(26,_27,_28)] text-zinc-300 hover:text-white text-[12px] gap-[6px] pt-1.5 pr-2.5 pb-1.5 pl-2.5 rounded-md font-ui transition-all hover:bg-[#27272a]"
+                >
+                  <FaExternalLinkAlt className="text-[11px]" /> Case completo
                 </a>
               )}
               

@@ -5,6 +5,7 @@ export interface ProjectData {
   tech: string[];
   github: string;
   live?: string;
+  slug?: string;
   demoWarning?: boolean;
   isUnderDevelopment?: boolean;
   isPrivate?: boolean;
@@ -21,6 +22,7 @@ export const featuredProjects: ProjectData[] = [
     tech: ['UX/UI', 'Information Architecture', 'Journey Mapping'],
     github: '',
     live: 'https://hevertondaniel.medium.com/transformando-uma-tela-de-atalhos-em-uma-experiência-de-gestão-financeira-dbc34fd58a49',
+    slug: 'payments-hub',
     banner: '/images/projects/payments-hub.jpg',
     isPrivate: true,
   },
@@ -33,6 +35,7 @@ export const featuredProjects: ProjectData[] = [
     tech: ['UX/UI', 'Prototyping', 'Accessibility'],
     github: '',
     live: 'https://hevertondaniel.medium.com/traduzindo-complexidade-regulatória-em-experiências-digitais-b3123f7a52c9',
+    slug: 'open-finance',
     banner: '/images/projects/open-finance.jpg',
     isPrivate: true,
   },
@@ -47,6 +50,7 @@ export const featuredProjects: ProjectData[] = [
   tech: ['DesignOps', 'Figma', 'Governance', 'Information Architecture'],
   github: '',
   live: '', // Você pode colocar o link do Medium aqui quando escrever o artigo
+  slug: 'design-governance',
   banner: '/images/projects/design-governance.jpg', // Substitua pelo caminho da sua imagem
   isPrivate: true,
 }
@@ -64,6 +68,7 @@ export const additionalProjects: ProjectData[] = [
     },
     tech: ['UX Discovery', 'Wireframing', 'UI Design'],
     github: '',
+    slug: 'uni-moveis',
     live: 'https://hevertondaniel.medium.com/uni-imóveis-como-ajudar-pessoas-à-encontrarem-sua-locação-perfeita-com-mais-flexibilidade-e-66fe2cabcce2',
     banner: '/images/projects/uni-moveis.png.webp',
   },
@@ -76,6 +81,7 @@ export const additionalProjects: ProjectData[] = [
     tech: ['UX Research', 'UI Design', 'Finance'],
     github: '',
     live: 'https://hevertondaniel.medium.com/evoluindo-uma-jornada-financeira-crítica-b4032c17cd6e',
+    slug: 'receipt',
     banner: '/images/projects/receipt.png.png',
   }
   /* Ocultado temporariamente:
@@ -88,6 +94,7 @@ export const additionalProjects: ProjectData[] = [
     tech: ['Handoff', 'AI Automation', 'MCP'],
     github: '',
     isUnderDevelopment: true,
+    slug: 'handoff-automation',
     banner: '',
   }
   */

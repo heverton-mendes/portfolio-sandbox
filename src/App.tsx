@@ -9,6 +9,7 @@ import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
 import { Loading } from './components/layout/Loading';
 import { ClickSpark } from './components/ui/ClickSpark';
+import ArticleLayout from './pages/ArticleLayout'; // Ajuste o caminho se necessário
 import { I18nProvider } from './context/I18nContext';
 
 const Home = lazy(() => import('./pages/Home'));
@@ -30,6 +31,7 @@ export default function App() {
                   <Route path="/" element={<Home />} />
                   <Route path="/projects" element={<ProjectsLayout />} />
                   <Route path="/uses" element={<UsesLayout />} />
+                  <Route path="/case/:slug" element={<ArticleLayout />} />
                   <Route path="/resume" element={<ResumeLayout />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
