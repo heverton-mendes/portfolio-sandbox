@@ -77,25 +77,30 @@ export function ProjectCard({ project, language }: { project: ProjectData, langu
             </h3>
             
             <div className="flex gap-2">
-              {/* Botão em INGLÊS - Rota Interna */}
-              {language === 'en' && project.slug && (
+              {/* Botão de Artigo Interno (Usado para projetos que têm página interna no site, ex: design-governance) */}
+              {project.slug && (
                 <Link 
                   to={`/case/${project.slug}`} 
                   className="shadow-composite items-center flex font-medium justify-center bg-[rgb(26,_27,_28)] text-zinc-300 hover:text-white text-[12px] gap-[6px] pt-1.5 pr-2.5 pb-1.5 pl-2.5 rounded-md font-ui transition-all hover:bg-[#27272a]"
                 >
-                  Full work case
+                  {language === 'en' ? 'Read Article' : 'Ler Artigo'}
                 </Link>
               )}
 
-              {/* Botão em PORTUGUÊS - Medium Externo */}
-              {language === 'pt' && project.live && project.live.trim() !== '' && (
+              {/* Botão de Link Externo / Medium (Usado para projetos que não têm página interna, ex: Uni Imóveis ou se o slug não existir) */}
+              {(!project.slug || project.slug === 'receipts' /* adicione slugs externos aqui se houver */) && project.live && project.live.trim() !== '' && (
+                /* Nota: Se o Uni Imóveis estiver no additionalProjects, ele não tem slug, então vai cair direto aqui para PT e EN! */
+              )}
+
+              {/* Ajuste definitivo para garantir o Medium no Uni Imóveis em ambos os idiomas (ou qualquer outro sem slug) */}
+              {!project.slug && project.live && project.live.trim() !== '' && (
                 <a 
                   href={project.live} 
                   target="_blank" 
                   rel="noreferrer" 
                   className="shadow-composite items-center flex font-medium justify-center bg-[rgb(26,_27,_28)] text-zinc-300 hover:text-white text-[12px] gap-[6px] pt-1.5 pr-2.5 pb-1.5 pl-2.5 rounded-md font-ui transition-all hover:bg-[#27272a]"
                 >
-                  <FaExternalLinkAlt className="text-[11px]" /> Case completo
+                  <FaExternalLinkAlt className="text-[11px]" /> {language === 'en' ? 'Read Article' : 'Ler Artigo'}
                 </a>
               )}
               
