@@ -81,7 +81,7 @@ export const additionalProjects: ProjectData[] = [
     tech: ['UX Research', 'UI Design', 'Finance'],
     github: '',
     live: 'https://hevertondaniel.medium.com/evoluindo-uma-jornada-financeira-crítica-b4032c17cd6e',
-    slug: 'receipt',
+    slug: 'receipts',
     banner: '/images/projects/receipt.png.png',
   }
   /* Ocultado temporariamente:

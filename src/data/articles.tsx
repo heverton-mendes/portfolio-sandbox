@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Tipagem para os nossos artigos
 export type ArticleContent = {
   [key: string]: {
     en: React.ReactNode;
@@ -110,8 +109,86 @@ export const articlesData: ArticleContent = {
       </div>
     ),
   },
-  
-  // O formato para os próximos cases será idêntico:
-  // 'open-finance': { en: (...), pt: (...) },
-  // 'payments-hub': { en: (...), pt: (...) }
+
+  'receipts': {
+    en: (
+      <div className="space-y-6 text-zinc-300 font-ui text-[15px] leading-relaxed">
+        <p>
+          During my tenure as a Product Designer in a large-scale financial institution, I led the evolution of a critical digital journey for customers: the consultation and sharing of payment receipts. Receipts play an essential role in people's financial lives, serving moments of transaction confirmation, organization, dispute, and tracking.
+        </p>
+        <p>
+          Due to confidentiality constraints, specific product details and internal interfaces cannot be displayed, but here I share the process, challenges, and key learnings involved in modernizing this experience.
+        </p>
+
+        <h3 className="text-xl font-bold text-white mt-10 mb-4">The Initial Scenario & Legacy Context</h3>
+        <p>
+          The challenge began even before the redesign phase. The product was navigating a period of design organization modernization, which included a massive tool migration and Design System evolution. When I joined, part of the product's history was tied to legacy files and previous workflows. Rebuilding the context required mapping existing screens, understanding current flows, and identifying patterns directly from production.
+        </p>
+
+        <h3 className="text-xl font-bold text-white mt-10 mb-4">The Challenges</h3>
+        <p>The journey presented clear opportunities for enhancement across multiple dimensions:</p>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li><strong className="text-zinc-100">Information Clarity & Hierarchy:</strong> Better data layout for quick comprehension.</li>
+          <li><strong className="text-zinc-100">Navigation & Organization:</strong> Reducing friction in finding past documents.</li>
+          <li><strong className="text-zinc-100">Technical Constraints:</strong> Working around legacy storage systems and massive historical data volumes.</li>
+        </ul>
+        <p className="italic text-zinc-400">
+          The central question was: How to modernize an existing experience without losing the trust inherent to a critical financial journey?
+        </p>
+
+        <h3 className="text-xl font-bold text-white mt-10 mb-4">Approach & Cross-Functional Collaboration</h3>
+        <p>
+          Working closely with Product, Engineering, Research, and specialized business units, I shifted the focus from a "screen-based" mindset to a "needs-based" approach. Users needed simple outcomes: viewing receipts over a longer period, easier filtering, and intuitive categorization.
+        </p>
+        <p>
+          Beyond the customer-facing journey, I also modernized an internal service platform utilized by operations teams. By prototyping and testing directly with internal users, we validated proposals that increased daily service efficiency.
+        </p>
+
+        <h3 className="text-xl font-bold text-white mt-10 mb-4">Results & Learnings</h3>
+        <p>
+          This project reinforced a core principle of Product Design: modernizing an existing product isn't just about updating an interface. It requires recovering lost knowledge, understanding human needs, negotiating with legacy technology, and building alignment.
+        </p>
+        <p className="p-4 border-l-4 border-zinc-500 bg-zinc-900/50 mt-6 italic">
+          In financial products where trust is paramount, every experience improvement must balance: Client + Technology + Business + Operations.
+        </p>
+      </div>
+    ),
+    
+    pt: (
+      <div className="space-y-6 text-zinc-300 font-ui text-[15px] leading-relaxed">
+        <p>
+          Durante minha atuação como Product Designer em uma instituição financeira de grande escala, participei da evolução de uma jornada digital essencial para clientes: a consulta e o compartilhamento de comprovantes. Os comprovantes possuem um papel fundamental na vida financeira das pessoas, sendo utilizados em momentos de confirmação, organização, contestação e acompanhamento de transações.
+        </p>
+        <p>
+          Por questões de confidencialidade, detalhes específicos do produto e interfaces internas não serão apresentados, mas compartilho aqui o processo, os desafios e os aprendizados envolvidos na evolução dessa experiência.
+        </p>
+
+        <h3 className="text-xl font-bold text-white mt-10 mb-4">O Cenário Inicial e Sistemas Legados</h3>
+        <p>
+          O desafio começou antes mesmo do redesenho da interface. O produto passava por um momento de modernização da organização de design, incluindo migração de ferramentas e evolução do Design System. Grande parte do contexto visual precisou ser reconstruída a partir do ambiente de produção, mapeando telas e recuperando o histórico operacional.
+        </p>
+        <p>
+          A proposta visual precisava conversar com uma estrutura tecnológica antiga de armazenamento, lidando com um grande volume histórico de dados, modelos de dados legados e a necessidade de uma evolução gradual. O design teve de responder a uma pergunta central: <em>Como modernizar uma experiência existente sem perder a confiança de uma jornada financeira crítica?</em>
+        </p>
+
+        <h3 className="text-xl font-bold text-white mt-10 mb-4">Atuação e Colaboração Multidisciplinar</h3>
+        <p>
+          Em parceria estreita com Produto, Engenharia, Pesquisa e áreas especialistas, direcionamos o foco de uma abordagem baseada em "telas" para uma abordagem baseada em "necessidades reais". Identificamos que os usuários precisavam de melhorias simples, como:
+        </p>
+        <ul className="list-disc pl-6 space-y-2 mb-6">
+          <li><strong className="text-zinc-100">Amplitude de Consulta:</strong> Expansão do período disponível para busca de comprovantes.</li>
+          <li><strong className="text-zinc-100">Filtros Avançados:</strong> Melhor organização por categorias e tipos de transação.</li>
+          <li><strong className="text-zinc-100">Ferramentas Internas:</strong> Modernização paralelamente de uma plataforma de atendimento utilizada por equipes de suporte, validando propostas diretamente com os usuários internos.</li>
+        </ul>
+
+        <h3 className="text-xl font-bold text-white mt-10 mb-4">Resultados e Aprendizados</h3>
+        <p>
+          Esse projeto reforçou uma visão essencial sobre Product Design: modernizar um produto corporativo existente não significa apenas atualizar sua interface. Significa recuperar conhecimento perdido, entender pessoas, negociar com restrições tecnológicas e construir alinhamento interno.
+        </p>
+        <p className="p-4 border-l-4 border-zinc-500 bg-zinc-900/50 mt-6 italic">
+          Em produtos financeiros, onde a confiança é o pilar central, cada melhoria de experiência deve equilibrar de forma harmoniosa: Cliente + Tecnologia + Negócio + Operação.
+        </p>
+      </div>
+    ),
+  }
 };
