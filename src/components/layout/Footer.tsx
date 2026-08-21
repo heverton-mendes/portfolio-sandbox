@@ -14,12 +14,12 @@ export function Footer() {
 
   const content = {
     en: {
-      status: 'Looking for my next big challenge — Available remotely or in SP.',
+      status: 'Looking for my next big challenge — Available remotely or in Belo Horizonte - MG.',
       builtWith: "Coded with Gemini, Google AI Studio & VSCode.",
       rights: "2026. All rights reserved."
     },
     pt: {
-      status: 'Buscando meu próximo grande desafio — Remoto ou São Paulo.',
+      status: 'Buscando meu próximo grande desafio — Remoto ou Belo Horizonte / MG.',
       builtWith: "Desenvolvido com Gemini, Google AI Studio & VSCode.",
       rights: "2026. Todos os direitos reservados."
     }
