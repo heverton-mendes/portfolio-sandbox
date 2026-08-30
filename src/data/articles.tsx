@@ -11,13 +11,12 @@ export const articlesData: ArticleContent = {
   'design-governance': {
     en: (
       <>
-        {/* Título de Apoio / Subtítulo */}
         <h3 className="!mt-0 !border-none !pl-0 text-xl md:text-2xl text-zinc-400 font-normal">
           Figma Governance: A three-tier structure for operational efficiency at scale
         </h3>
 
         <p>
-          In the ecosystem of one of the country's largest financial institutions, the launch speed and modernization of digital payment products are critical to maintaining market leadership. During my nearly 4-year tenure as a full-time Product Designer (PwD) at Itaú, working within the Payments division—an area supporting complex financial journeys for millions of daily active users—I faced a challenge that went far beyond drawing interfaces.
+          In the ecosystem of one of the country's largest financial institutions, the launch speed and modernization of digital payment products are critical to maintaining market leadership. During my nearly 4-year tenure as a Product Designer at Itaú, working within the Payments division—an area supporting complex financial journeys for millions of daily active users—I faced a challenge that went far beyond drawing interfaces.
         </p>
 
         <h3>The Challenge: Invisible Collapse</h3>
@@ -30,16 +29,7 @@ export const articlesData: ArticleContent = {
           <li><strong>Process Disconnection:</strong> The team adopted the Double Diamond theoretically, but in Figma, it resulted in contextless clusters of screens.</li>
         </ul>
 
-        {/* 
-          DICA: Para colocar um print do seu figma organizado, descomente o código abaixo e coloque o caminho da sua imagem
-        */}
-        {/* 
-        <img 
-          src="/images/prints/figma-organization.jpg" 
-          alt="Estrutura de pastas no Figma" 
-          className="w-full rounded-xl border border-zinc-800 my-10 shadow-[0_8px_30px_rgba(0,0,0,0.5)]"
-        /> 
-        */}
+        {/* <img src="/images/prints/figma-organization.jpg" alt="Estrutura de pastas no Figma" className="w-full rounded-xl border border-zinc-800 my-10 shadow-[0_8px_30px_rgba(0,0,0,0.5)]" /> */}
         
         <h3>Strategy & The 3-Tier Architecture</h3>
         <p>
@@ -72,13 +62,12 @@ export const articlesData: ArticleContent = {
     
     pt: (
       <>
-        {/* Título de Apoio / Subtítulo */}
         <h3 className="!mt-0 !border-none !pl-0 text-xl md:text-2xl text-zinc-400 font-normal">
           Governança no Figma: Estrutura em três camadas para eficiência operacional em design
         </h3>
 
         <p>
-          No ecossistema de uma das maiores e mais tradicionais instituições financeiras do país, a velocidade de lançamento e a modernização de produtos são críticas para manter a liderança de mercado. Durante meus quase 4 anos atuando como Product Designer CLT (PCD) no Banco Itaú, dentro da Gerência de Pagamentos — uma área responsável por sustentar jornadas financeiras complexas para milhões de usuários ativos diariamente — deparei-me com um desafio que ia muito além de desenhar interfaces.
+          No ecossistema de uma das maiores e mais tradicionais instituições financeiras do país, a velocidade de lançamento e a modernização de produtos são críticas para manter a liderança de mercado. Durante meus quase 4 anos atuando como Product Designer no Banco Itaú, dentro da Gerência de Pagamentos — uma área responsável por sustentar jornadas financeiras complexas para milhões de usuários ativos diariamente — deparei-me com um desafio que ia muito além de desenhar interfaces.
         </p>
 
         <h3>O Desafio: Colapso Invisível</h3>
@@ -91,16 +80,7 @@ export const articlesData: ArticleContent = {
           <li><strong>Desconexão de processos:</strong> O time adotava o Duplo Diamante na teoria, mas a falta de estrutura no Figma resultava em amontoados de telas sem contexto.</li>
         </ul>
 
-        {/* 
-          DICA: Para colocar um print do seu figma organizado, descomente o código abaixo e coloque o caminho da sua imagem
-        */}
-        {/* 
-        <img 
-          src="/images/prints/figma-organization.jpg" 
-          alt="Estrutura de pastas no Figma" 
-          className="w-full rounded-xl border border-zinc-800 my-10 shadow-[0_8px_30px_rgba(0,0,0,0.5)]"
-        /> 
-        */}
+        {/* <img src="/images/prints/figma-organization.jpg" alt="Estrutura de pastas no Figma" className="w-full rounded-xl border border-zinc-800 my-10 shadow-[0_8px_30px_rgba(0,0,0,0.5)]" /> */}
         
         <h3>Estratégia e a Arquitetura em 3 Níveis</h3>
         <p>
@@ -108,7 +88,7 @@ export const articlesData: ArticleContent = {
         </p>
         <ul>
           <li><strong>Nível Gerencial (Macro):</strong> Centralizei o ecossistema sob a pasta matriz da gerência de Pagamentos, estabelecendo uma fronteira de busca clara.</li>
-          <li><strong>Nível de Coordenações e Produtos (Meso):</strong> Organize pastas dividindo rigorosamente cada produto em Evolução do Produto (dia a dia), Visioning (conceitos estratégicos) e Pesquisas e Testes (historização de UX).</li>
+          <li><strong>Nível de Coordenações e Produtos (Meso):</strong> Organizei em pastas dividindo rigorosamente cada produto em pastas de arquivos como Evolução do Produto (dia a dia), Visioning (conceitos estratégicos) e Pesquisas e Testes (historização de UX).</li>
           <li><strong>Nível de Arquivos (Micro):</strong> Substituí arquivos avulsos por blueprints — templates padronizados baseados no processo de design (Discovery, Explorações, Handoff, Critiques e Testes).</li>
         </ul>
 
@@ -117,7 +97,7 @@ export const articlesData: ArticleContent = {
           Com a governança ativa, apliquei essa infraestrutura no produto Meus Pagamentos. Consolidei toda a documentação em um painel interativo utilizando a ferramenta <strong>Figma Make</strong>, o que incentivou a adoção prática pelo time de design.
         </p>
         <p>
-          O objetivo estratégico final era preparar a infraestrutura do time para novos desafios tecnológicos. Transformando os handoffs da camada Micro em arquivos Markdown (<code>.md</code>), viabilizaríamos a adoção futura do <strong>MCP (Model Context Protocol)</strong>, otimizando o QA de design e permitindo a criação de protótipos de alta fidelidade com auxílio direto de Inteligência Artificial.
+          O objetivo estratégico final era preparar a infraestrutura do time para novos desafios tecnológicos. Transformando os handoffs em arquivos Markdown (<code>.md</code>), viabilizaríamos a adoção futura do <strong>MCP (Model Context Protocol)</strong>, otimizando o QA de design e permitindo a criação de protótipos de alta fidelidade com auxílio direto de Inteligência Artificial.
         </p>
 
         <h3>Resultados e Impacto</h3>
@@ -140,37 +120,37 @@ export const articlesData: ArticleContent = {
         </h3>
 
         <p>
-          During my nearly 4 years as a full-time Product Designer (PwD) at Itaú, I worked on the evolution of digital payment experiences. The "Meus Pagamentos" (My Payments) product, despite its high volume of daily accesses, historically operated as a simplified, static shortcut screen that connected the customer to disparate features across the app.
+          During my time as a Product Designer at Itaú, I worked on the evolution of digital payment experiences. The "Meus Pagamentos" (My Payments) product, despite its high volume of daily accesses, historically operated as a simplified, static shortcut screen connecting the customer to disparate features across the app.
         </p>
 
-        <h3>The Problem: A Fragmented Ecosystem</h3>
+        <h3>The Challenge: A Fragmented Ecosystem</h3>
         <p>
-          The rapid organic growth of the organization led different teams to develop payment features at different times. This resulted in a fragmented ecosystem where customers had to navigate disconnected and confusing paths to pay, manage, and track financial commitments with the exact same original intent. Users lacked clarity on what was already scheduled or paid, and strongly desired proactive suggestions instead of having to actively hunt down their bills.
+          The rapid organic growth of the organization led different teams to develop payment features at different times. This resulted in a fragmented ecosystem where customers had to navigate confusing paths to pay and track financial commitments. 
         </p>
-        
-        {/* Imagem Placeholder */}
-        {/* <img src="/images/prints/payments-hub.jpg" alt="Tela do Hub de Pagamentos" className="w-full rounded-xl border border-zinc-800 my-10 shadow-[0_8px_30px_rgba(0,0,0,0.5)]" /> */}
-
-        <h3>Strategy & Decisions</h3>
         <p>
-          The strategy was based on the vision that, in large corporate environments, good design acts as a strategic bridge between engineering constraints, complex business rules, and human needs. I shifted the focus from isolated interface drawing to deep end-to-end journey mapping. Additionally, I restructured and modernized the product's UI Library, integrating new flows with the corporate Design System and establishing robust handoff documentation as a shared technical repository between product, technology, and UX writing.
+          During user interviews, a clear pattern emerged: paying bills was a confusing process, with users alternating between different bank apps due to scattered balances and missing invoices. They lacked clarity on what was scheduled and strongly desired proactive solutions rather than actively hunting down their bills.
+        </p>
+
+        <h3>Strategy & Structural Decisions</h3>
+        <p>
+          The central decision was to shift from drawing isolated interfaces to unifying the end-to-end journey. To support this scale and ensure consistency, I initiated the componentization of the area's screens, laying the groundwork for a Team Library in Figma intended for reuse by other design squads.
         </p>
 
         <h3>The Process & Tactical Deliveries</h3>
-        <p>The project was structured into three tactical delivery fronts:</p>
+        <p>The project development was structured around collaboration and iterative improvements:</p>
         <ul>
-          <li><strong>Conversational Assistant:</strong> Assisted in designing and accelerating an intelligent conversational experience, mapping multi-channel touchpoints (WhatsApp, email, and push notifications).</li>
-          <li><strong>Commitments & Batch Payments:</strong> Designed and handed off the commitments area and due date calendar, structuring a new batch payment journey allowing users to settle multiple bills seamlessly.</li>
-          <li><strong>Dynamic Smart Automations:</strong> Developed the first functional version of a dynamic carousel focused on easing the user's daily life, suggesting contextual shortcuts like recurring payment automation or Pix key creation based on current behavior.</li>
+          <li><strong>Boleto Search (CPF) & Primary Bank Goal:</strong> Based on interview insights regarding multi-app usage, we kept the "Boleto Search" feature prominent. I evolved its UI from a generic card to a streamlined title and status indicator (Active/Inactive). This simple visual shift significantly increased feature activation, directly impacting our primary bank (principality) business target.</li>
+          <li><strong>Batch Payments & Cognitive Load Reduction:</strong> I collaborated closely with another product's design team to integrate their "Batch Payment" feature directly into the Hub. This joint effort combined related functionalities, drastically reducing cognitive load, screen repetition, and overall friction for the user.</li>
+          <li><strong>Dynamic Smart Automations:</strong> Starting from an existing MVP, I led the continuous evolution of a dynamic carousel offering contextual shortcuts. My work heavily focused on collaborating with other payment squads to integrate new features and establishing robust technical documentation for future iterations.</li>
         </ul>
 
         <h3>Results & Impact</h3>
         <p>
-          The consolidated Payments Hub experience significantly transformed the financial management of millions of customers. During my direct involvement, Customer Satisfaction (Likert scale) rose from <strong>33% to 59%</strong>. This growth in an ecosystem serving over 10 million monthly accesses allowed the division to successfully meet its strategic business target for 2025.
+          The consolidated Payments Hub experience significantly transformed the financial management of millions of customers. During my direct involvement, Customer Satisfaction (Likert scale) rose from <strong>33% to 59%</strong>. This growth in an ecosystem serving over 10 million monthly accesses allowed the division to successfully meet its strategic business target for the year.
         </p>
         
         <blockquote>
-          The evolution of the Payments Hub consolidated the practical lesson that UX decisions must be directly connected to real business impact metrics and behavior. Operating in a system of this scale proved the viability of overcoming operational complexities through clear processes and horizontal collaboration.
+          The evolution of the Payments Hub consolidated the practical lesson that UX decisions must be directly connected to real business impact metrics and behavior. Operating in a system of this scale proved the viability of overcoming operational complexities through clear processes and cross-team collaboration.
         </blockquote>
       </>
     ),
@@ -182,37 +162,37 @@ export const articlesData: ArticleContent = {
         </h3>
 
         <p>
-          Durante minha jornada de quase 4 anos como Product Designer CLT (PCD) no Banco Itaú, atuei na evolução da experiência de pagamentos digitais. O produto Meus Pagamentos, apesar de possuir alto volume de acessos diários, funcionava de maneira simplificada, operando historicamente como uma porta de entrada estática de atalhos que conectava o cliente a ferramentas dispersas pelo aplicativo.
+          Durante minha atuação como Product Designer no Banco Itaú, atuei na evolução da experiência de pagamentos digitais. O produto Meus Pagamentos, apesar de possuir alto volume de acessos diários, funcionava de maneira simplificada, operando historicamente como uma porta de entrada estática de atalhos que conectava o cliente a ferramentas dispersas pelo aplicativo.
         </p>
 
         <h3>O Desafio: Ecossistema Fragmentado</h3>
         <p>
-          O crescimento orgânico da organização fez com que diferentes equipes desenvolvessem recursos de pagamento em momentos distintos. Isso resultou em um ecossistema fragmentado, onde os clientes precisavam percorrer caminhos desconectados e confusos para pagar, gerir e acompanhar compromissos financeiros. Os usuários sentiam falta de clareza sobre o que já havia sido pago ou programado, e manifestavam o desejo de receber notificações proativas que evitassem a necessidade de buscar boletos ativamente.
+          O crescimento orgânico da organização fez com que diferentes equipes desenvolvessem recursos de pagamento em momentos distintos. Isso resultou em um ecossistema fragmentado, onde os clientes precisavam percorrer caminhos desconectados e confusos para gerir compromissos financeiros. 
+        </p>
+        <p>
+          Durante entrevistas com usuários, um padrão claro emergiu: a jornada de pagamento de contas era confusa, com clientes alternando entre diferentes aplicativos bancários devido a saldos dispersos e boletos não visualizados. Os usuários sentiam falta de clareza sobre o que já estava programado e manifestavam o desejo de receber centralização e proatividade.
         </p>
 
-        {/* Imagem Placeholder */}
-        {/* <img src="/images/prints/payments-hub.jpg" alt="Tela do Hub de Pagamentos" className="w-full rounded-xl border border-zinc-800 my-10 shadow-[0_8px_30px_rgba(0,0,0,0.5)]" /> */}
-
-        <h3>Estratégia e Decisões</h3>
+        <h3>Estratégia e Decisões Estruturais</h3>
         <p>
-          A estratégia baseou-se na visão de que o bom design atua como uma ponte estratégica entre restrições tecnológicas, regras de negócio e necessidades humanas. A decisão principal foi migrar do desenho isolado de interfaces para um mapeamento profundo das jornadas ponta a ponta. Adicionalmente, reestruturei e modernizei a biblioteca de componentes (UI Library), integrando os novos fluxos de forma consistente com o Design System corporativo e estabelecendo uma documentação de handoff robusta para tecnologia.
+          A decisão central foi migrar do desenho isolado de interfaces para a unificação das jornadas. Para suportar essa escala, iniciei a estruturação e componentização das telas da área, estabelecendo as bases de uma Team Library no Figma focada no reuso e consistência para outros times de design.
         </p>
 
         <h3>O Processo e Entregas Táticas</h3>
-        <p>O desenvolvimento do projeto foi estruturado em três frentes de entregas táticas:</p>
+        <p>O desenvolvimento do projeto foi estruturado em forte colaboração cross-functional e evolução contínua:</p>
         <ul>
-          <li><strong>Assistente Conversacional:</strong> Auxiliei na criação de uma experiência inteligente, mapeando a interação do usuário ao receber notificações integradas via WhatsApp, e-mail e push do sistema.</li>
-          <li><strong>Gestão de Compromissos e Pagamento em Lote:</strong> Conduzi o design da área de calendário de vencimentos, estruturando uma nova jornada de pagamento de boletos em lote que possibilitou a quitação de múltiplos boletos em um único fluxo.</li>
-          <li><strong>Automações Inteligentes Dinâmicas:</strong> Desenvolvi a primeira versão de um carrossel dinâmico sugerindo atalhos contextuais (automação de pagamentos recorrentes e chaves Pix) com base no comportamento atual do cliente.</li>
+          <li><strong>Buscador de Boletos e Principalidade:</strong> Mapeando a dor do uso de múltiplos apps, mantivemos a busca de boletos por CPF em extremo destaque. Evoluí a interface de um modelo genérico de card para um elemento direto composto por título e status (Ativo/Desativado). Essa mudança visual aumentou consideravelmente a ativação da funcionalidade, impulsionando a meta de principalidade bancária.</li>
+          <li><strong>Pagamento em Lote e Redução Cognitiva:</strong> Em colaboração direta com outro time de design, atuamos para integrar a funcionalidade de "Pagamento em lote" para dentro do Hub. Esse esforço conjunto combinou funcionalidades sobrepostas, reduzindo repetições de telas e diminuindo drasticamente a carga cognitiva do cliente.</li>
+          <li><strong>Automações Dinâmicas (Facilite seu dia a dia):</strong> A partir de um MVP já existente, atuei na evolução contínua do carrossel inteligente. O trabalho focou na colaboração com outras squads de pagamento para trazer funcionalidades relevantes e na documentação técnica rigorosa para viabilizar as versões futuras.</li>
         </ul>
 
         <h3>Resultados e Impacto</h3>
         <p>
-          A experiência consolidada do Hub de Pagamentos transformou o gerenciamento financeiro de milhões de clientes. Durante o período do meu envolvimento direto no produto, a Satisfação do Cliente (medida através da escala Likert) subiu de <strong>33% para 59%</strong>. Esse crescimento em um ecossistema que transaciona mais de 10 milhões de acessos mensais permitiu que a gerência atingisse o seu target estratégico planejado para 2025.
+          A experiência consolidada do Hub de Pagamentos transformou o gerenciamento financeiro de milhões de clientes. Durante o período do meu envolvimento direto no produto, a Satisfação do Cliente (medida através da escala Likert) subiu de <strong>33% para 59%</strong>[cite: 2]. Esse crescimento em um ecossistema que transaciona mais de 10 milhões de acessos mensais permitiu que a gerência atingisse o seu target estratégico de negócios.
         </p>
         
         <blockquote>
-          A evolução do Hub de Pagamentos consolidou o aprendizado de que decisões de UX precisam estar conectadas a métricas de impacto real de negócios. A atuação como designer num sistema desse porte reforçou meu repertório de superar complexidades operacionais por meio de metodologias consistentes de design.
+          A evolução do Hub de Pagamentos consolidou o aprendizado de que decisões de UX precisam estar conectadas a métricas de impacto real de negócios. A atuação como designer num sistema desse porte reforçou meu repertório de superar complexidades operacionais por meio de colaboração entre times e metodologias consistentes de design.
         </blockquote>
       </>
     ),
@@ -226,7 +206,7 @@ export const articlesData: ArticleContent = {
         </h3>
 
         <p>
-          Over the course of my nearly 4 years acting as a full-time Product Designer (PwD) at Itaú, I worked on digital products aimed at evolving the payments and Open Finance ecosystem. This environment deals with crucial financial transactions and data sharing, where clarity and security are fundamental for the millions of customers interacting with the institution daily.
+          Over the course of my nearly 4 years acting as a Product Designer at Itaú, I worked on digital products aimed at evolving the payments and Open Finance ecosystem. This environment deals with crucial financial transactions and data sharing, where clarity and security are fundamental for the millions of customers interacting with the institution daily.
         </p>
 
         <h3>The Challenge: Navigating Systemic Complexity</h3>
@@ -237,7 +217,6 @@ export const articlesData: ArticleContent = {
           The guiding question was: <em>How do we modernize existing experiences and create new solutions while keeping things radically simple for the customer in a highly complex regulatory environment?</em>
         </p>
 
-        {/* Imagem Placeholder */}
         {/* <img src="/images/prints/open-finance.jpg" alt="Fluxo Open Finance" className="w-full rounded-xl border border-zinc-800 my-10 shadow-[0_8px_30px_rgba(0,0,0,0.5)]" /> */}
 
         <h3>Strategy & Decisions</h3>
@@ -274,7 +253,7 @@ export const articlesData: ArticleContent = {
         </h3>
 
         <p>
-          Ao longo dos meus quase 4 anos atuando como Product Designer CLT (PCD) no Banco Itaú, trabalhei em produtos digitais voltados para a evolução do ecossistema de pagamentos e Open Finance. Esse ecossistema lida com transações financeiras e compartilhamento de dados cruciais, onde a clareza e a segurança são fundamentais para os milhões de clientes que interagem diariamente com a instituição.
+          Ao longo dos meus quase 4 anos atuando como Product Designer no Banco Itaú, trabalhei em produtos digitais voltados para a evolução do ecossistema de pagamentos e Open Finance. Esse ecossistema lida com transações financeiras e compartilhamento de dados cruciais, onde a clareza e a segurança são fundamentais para os milhões de clientes que interagem diariamente com a instituição.
         </p>
 
         <h3>O Desafio: Navegando na Complexidade Sistêmica</h3>
@@ -285,7 +264,6 @@ export const articlesData: ArticleContent = {
           A pergunta central que guiou o projeto foi: <em>Como modernizar experiências existentes e criar novas soluções mantendo a simplicidade para o cliente em um ambiente de alta complexidade técnica e regulatória?</em>
         </p>
 
-        {/* Imagem Placeholder */}
         {/* <img src="/images/prints/open-finance.jpg" alt="Fluxo Open Finance" className="w-full rounded-xl border border-zinc-800 my-10 shadow-[0_8px_30px_rgba(0,0,0,0.5)]" /> */}
 
         <h3>Estratégia e Decisões</h3>
@@ -324,7 +302,7 @@ export const articlesData: ArticleContent = {
         </h3>
 
         <p>
-          As part of my nearly 4-year journey working as a full-time Product Designer (PwD) at Itaú, I led the evolution of the consultation and receipt sharing journey. Receipts represent an essential component in clients' financial lives, directly used for organization, transaction confirmation, dispute resolution, and tracking.
+          As part of my nearly 4-year journey working as a Product Designer at Itaú, I led the evolution of the consultation and receipt sharing journey. Receipts represent an essential component in clients' financial lives, directly used for organization, transaction confirmation, dispute resolution, and tracking.
         </p>
 
         <h3>The Challenge: Modernizing Legacies</h3>
@@ -335,7 +313,6 @@ export const articlesData: ArticleContent = {
           Since previous design documentation was unavailable, I had to rebuild the visual context by mapping screens directly from the production environment and recovering operational history. The greatest challenge was designing a modern interface that communicated with an aging storage infrastructure—characterized by massive historical data volumes—without compromising the trust of a critical journey.
         </p>
 
-        {/* Imagem Placeholder */}
         {/* <img src="/images/prints/comprovantes.jpg" alt="Evolução de Comprovantes" className="w-full rounded-xl border border-zinc-800 my-10 shadow-[0_8px_30px_rgba(0,0,0,0.5)]" /> */}
 
         <h3>Strategy & Decisions</h3>
@@ -372,7 +349,7 @@ export const articlesData: ArticleContent = {
         </h3>
 
         <p>
-          Como parte da minha trajetória de quase 4 anos atuando como Product Designer CLT (PCD) no Banco Itaú, atuei na evolução da jornada de consulta e compartilhamento de comprovantes. Os comprovantes representam um componente essencial na vida financeira dos clientes, sendo utilizados diretamente para fins de organização, confirmação, contestação e acompanhamento de transações.
+          Como parte da minha trajetória de quase 4 anos atuando como Product Designer no Banco Itaú, atuei na evolução da jornada de consulta e compartilhamento de comprovantes. Os comprovantes representam um componente essencial na vida financeira dos clientes, sendo utilizados diretamente para fins de organização, confirmação, contestação e acompanhamento de transações.
         </p>
 
         <h3>O Desafio: Modernizando Legados</h3>
@@ -383,7 +360,6 @@ export const articlesData: ArticleContent = {
           O maior desafio foi projetar uma interface moderna que conversasse com uma infraestrutura antiga de armazenamento, caracterizada por um enorme volume de dados e modelos legados, sem comprometer a confiança de uma jornada crítica.
         </p>
 
-        {/* Imagem Placeholder */}
         {/* <img src="/images/prints/comprovantes.jpg" alt="Evolução de Comprovantes" className="w-full rounded-xl border border-zinc-800 my-10 shadow-[0_8px_30px_rgba(0,0,0,0.5)]" /> */}
 
         <h3>Estratégia e Decisões</h3>
