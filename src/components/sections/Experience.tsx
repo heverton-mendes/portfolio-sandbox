@@ -78,7 +78,7 @@ export function Experience() {
   ];
 
   return (
-    <section className="container-max mb-16"> 
+    <section className="container-max mb-40"> 
       <div className="mb-1">
         <SectionTitle>{language === 'en' ? 'Work Experience' : 'Experiência'}</SectionTitle>
       </div>
