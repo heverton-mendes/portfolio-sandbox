@@ -1,99 +1,150 @@
-export interface ProjectData {
-  banner: string;
-  name: { en: string; pt: string } | string;
-  desc: { en: string; pt: string } | string;
-  tech: string[];
-  github: string;
-  live?: string;
-  slug?: string;
-  demoWarning?: boolean;
-  isUnderDevelopment?: boolean;
-  isPrivate?: boolean;
+import React, { useState } from 'react';
+import { featuredProjects } from '../../data/projects';
+import type { ProjectData } from '../../data/projects';
+import { SectionTitle } from '../ui/SectionTitle';
+import { FaGithub, FaExternalLinkAlt, FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { useI18n } from '../../context/I18nContext';
+
+export function Projects() {
+  const { language } = useI18n();
+
+  return (
+    <section className="container-max mt-8 mb-8"> 
+      <div className="mb-6"> 
+        <SectionTitle>{language === 'en' ? 'My Projects' : 'Meus Projetos'}</SectionTitle>
+        {/* Aviso de Confidencialidade */}
+        <p className="text-[11.5px] text-zinc-500 italic mt-2 font-ui tracking-wide">
+          {language === 'en' 
+            ? 'Project visuals are conceptual representations to protect confidentiality — not original product screens.' 
+            : 'Os visuais dos projetos são representações conceituais para proteger a confidencialidade — não são telas originais.'}
+        </p>
+      </div>
+      
+      <div className="flex flex-col gap-6">
+        {featuredProjects.map((project, idx) => (
+          <ProjectCard key={idx} project={project} language={language} />
+        ))}
+      </div>
+      
+      <div className="mt-8 flex justify-end">
+        <Link 
+          to="/projects"
+          className="inline-flex items-center gap-2 text-zinc-400 px-4 py-2 text-sm font-ui hover:text-white transition-colors underline decoration-zinc-800 underline-offset-4"
+        >
+          {language === 'en' ? 'View all projects →' : 'Ver todos os projetos →'}
+        </Link>
+      </div>
+    </section>
+  );
 }
 
-export const featuredProjects: ProjectData[] = [
-  {
-    name: {
-      en: 'Payments Hub',
-      pt: 'Hub de Pagamentos'
-    },
-    desc: {
-      en: "Evolution of a centralized financial hub. The scope included assisting in the creation of a conversational assistant, modernizing commitments management (including batch payments), and designing dynamic smart automations.\n\nPROBLEM: Features built by different teams at different times — customers accessed their payment universe across disconnected places for the exact same intent: to pay, manage, and track.\n\nROLE & APPROACH: Led end-to-end journey mapping, organized complex handoffs, modernized the UI (Product Library), and created robust documentation to unify the experience.\n\nCOLLABORATION: Flows and documentation served as a shared reference across Design, Product, and Engineering.\n\nIMPACT: During my tenure, Customer Satisfaction (Likert) rose from ~33% to the 59% target in an ecosystem with over 10M monthly users.\n\nLEARNING: A UX decision only counts when validated by real numbers. I deepened my ability to track metrics, data, and user pain points to accurately target design solutions.",
+export function ProjectCard({ project, language }: { project: ProjectData, language: 'en' | 'pt' }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+  
+  const name = typeof project.name === 'string' ? project.name : project.name[language];
+  const desc = typeof project.desc === 'string' ? project.desc : project.desc[language];
+
+  return (
+    <div className="group flex flex-col md:flex-row items-start gap-6 p-5 border border-dashed border-zinc-800 rounded-xl bg-transparent hover:border-zinc-600 hover:bg-[#131315] transition-all duration-300">
       
-      pt: "Evolução de um hub financeiro centralizado. O escopo envolveu o auxílio na criação de um assistente conversacional, a modernização da gestão de compromissos (incluindo pagamentos em lote) e o design de automações inteligentes dinâmicas.\n\nPROBLEMA: Funcionalidades criadas por times diferentes em momentos diferentes — os clientes acessavam seu universo de pagamentos em lugares desconectados para uma mesma intenção: pagar, gerir e acompanhar.\n\nPAPEL E ABORDAGEM: Liderança no mapeamento de jornadas end-to-end, organização de handoffs complexos, modernização de UI (Library do Produto) e documentação para unificar a experiência.\n\nCOLABORAÇÃO: Fluxos e documentação servindo como referência compartilhada entre Design, Produto e Engenharia.\n\nIMPACTO: Durante minha atuação, a Satisfação do Cliente (Likert) subiu de ~33% para a meta de 59% em um produto com mais de 10 milhões de usuários.\n\nAPRENDIZADO: Uma decisão de UX só conta quando validada por números reais. Aprofundei minha capacidade de acompanhar métricas, dados e dores dos clientes para direcionar as soluções de design com precisão."
-    },
-    tech: ['UX/UI', 'Information Architecture', 'Journey Mapping'],
-    github: '',
-    live: '', // Link do Medium removido
-    slug: 'payments-hub', // Mantém o slug para abrir interno
-    banner: '/images/projects/payments-hub.jpg',
-    isPrivate: true,
-  },
-  {
-    name: {
-      en: 'Open Finance',
-      pt: 'Open Finance'
-    },
-    desc: {
-      en: "Making regulation feel simple.\n\nPROBLEM: A regulated, technical system — the user only needed to know what to do next, not how it worked underneath.\n\nROLE & APPROACH: Owned the end-to-end flow design; used prototypes as a negotiation tool with the squad before any code was written.\n\nCOLLABORATION: Product, Engineering and Research — balancing user needs against what the system could actually support.\n\nIMPACT: The outcome was a regulatory flow the squad could actually stand behind and implement successfully.\n\nLEARNING: Simplicity, inside a regulated system, is a negotiation — not a redesign.",
-      pt: "Tornando a regulação simples.\n\nPROBLEMA: Um sistema técnico e regulado — o usuário só precisava saber o que fazer a seguir, não como funcionava por baixo.\n\nPAPEL E ABORDAGEM: Liderança no design do fluxo end-to-end; uso de protótipos como ferramenta de negociação com a squad antes de qualquer código.\n\nCOLABORAÇÃO: Produto, Engenharia e Pesquisa — equilibrando necessidades do usuário com o que o sistema suportava.\n\nIMPACTO: A entrega foi um fluxo regulatório que a squad conseguiu apoiar e implementar com sucesso.\n\nAPRENDIZADO: Simplicidade, em um sistema regulado, é negociação — não apenas redesign."
-    },
-    tech: ['UX/UI', 'Prototyping', 'Accessibility'],
-    github: '',
-    live: '', // Link do Medium removido
-    slug: 'open-finance', // Mantém o slug para abrir interno
-    banner: '/images/projects/open-finance.jpg',
-    isPrivate: true,
-  },
-  {
-    name: {
-      en: 'Design at Scale & Governance',
-      pt: 'Design at Scale & Governance'
-    },
-    desc: {
-      en: "Transforming Figma from a chaotic tool into a shared infrastructure of knowledge.\n\nPROBLEM: Scattered files, lack of naming standards, and fragmented flows created a 'herculean effort' to locate final screens or understand the context of UX decisions across multiple squads.\n\nROLE & APPROACH: Mapped the team's operational flow and designed a 3-tier Information Architecture (Macro, Meso, Micro) reflecting the Double Diamond process within Figma.\n\nCOLLABORATION: Empowered Product Designers, Service Designers, UX Writers, and Stakeholders with standardized blueprints (Discovery, Handoff, Critiques, Tests) reducing communication noise.\n\nIMPACT: Eliminated cognitive load for starting new initiatives and created instant visibility of project status for leadership without needing alignment meetings.\n\nLEARNING: Figma is not just a UI tool; in large organizations, it becomes a sociotechnical system that requires governance to preserve knowledge.",
-      pt: "Transformando o Figma de uma ferramenta caótica em uma infraestrutura compartilhada de conhecimento.\n\nPROBLEMA: Arquivos dispersos e falta de padrões criavam um esforço gigantesco para localizar telas finais ou entender o contexto de decisões de UX entre várias squads.\n\nPAPEL E ABORDAGEM: Mapeamento do fluxo operacional e criação de uma Arquitetura de Informação em 3 camadas (Macro, Meso, Micro) refletindo o processo de Duplo Diamante dentro do Figma.\n\nCOLABORAÇÃO: Empoderou Designers, UX Writers e Stakeholders com blueprints padronizados (Discovery, Handoff, Critiques, Testes) reduzindo o ruído de comunicação.\n\nIMPACTO: Eliminou a carga cognitiva ao iniciar novas entregas e gerou visibilidade instantânea do status dos projetos para a liderança sem necessidade de reuniões de alinhamento.\n\nAPRENDIZADO: Figma não é só interface; em grandes operações, ele é um sistema sociotécnico que exige governança para preservar conhecimento."
-    },
-    tech: ['DesignOps', 'Figma', 'Governance', 'Information Architecture'],
-    github: '',
-    live: '', // Já estava sem link
-    slug: 'design-governance', // Mantém o slug para abrir interno
-    banner: '/images/projects/design-governance.jpg',
-    isPrivate: true,
-  }
-];
-
-export const additionalProjects: ProjectData[] = [
-  {
-    name: {
-      en: 'Uni Real Estate',
-      pt: 'Uni Imóveis'
-    },
-    desc: {
-      en: 'How to help people find their perfect rental with more flexibility and less friction.',
-      pt: 'Como ajudar pessoas a encontrarem sua locação perfeita com mais flexibilidade e menos atrito.'
-    },
-    tech: ['UX Discovery', 'Wireframing', 'UI Design'],
-    github: '',
-    live: 'https://hevertondaniel.medium.com/uni-imóveis-como-ajudar-pessoas-à-encontrarem-sua-locação-perfeita-com-mais-flexibilidade-e-66fe2cabcce2', // MANTIDO PARA ABRIR EXTERNO
-    // Sem slug para forçar a abertura do live link
-    banner: '/images/projects/uni-moveis.png.webp',
-  },
-  {
-    name: {
-      en: 'Receipts Evolution',
-      pt: 'Evolução de Comprovantes'
-    },
-    desc: {
-      en: "Evolving a critical financial journey to improve clarity and information accessibility after transactions.\n\nPROBLEM: A legacy experience lacking user behavior data, making it hard for users to find, understand, and organize their payment receipts.\n\nROLE & APPROACH: Mapped current flows and recovered lost historical context to build a modernization vision without losing trust.\n\nCOLLABORATION: Partnered with Product, Engineering, and internal operations to balance UX proposals with technical constraints.\n\nIMPACT: Established a baseline for experience metrics and successfully modernized both the user-facing journey and internal service tools.\n\nLEARNING: Modernizing a product isn't just about the interface; it's about recovering knowledge and negotiating with legacy technology.",
-      pt: "Evoluindo uma jornada financeira crítica para melhorar a clareza e acessibilidade das informações.\n\nPROBLEMA: Uma experiência legada sem dados de comportamento, dificultando que usuários encontrassem e organizassem seus comprovantes.\n\nPAPEL E ABORDAGEM: Mapeamento de fluxos e recuperação de contexto histórico para construir uma visão de modernização sem perder a confiança.\n\nCOLABORAÇÃO: Parceria com Produto, Engenharia e Operações para equilibrar propostas de UX com restrições técnicas.\n\nIMPACTO: Estabeleceu uma base para métricas de experiência e modernizou a jornada do usuário e ferramentas internas.\n\nAPRENDIZADO: Modernizar um produto não é só sobre interface; é sobre recuperar conhecimento e negociar com tecnologia legada."
-    },
-    tech: ['UX Research', 'UI Design', 'Finance'],
-    github: '',
-    live: '', // Link do Medium removido
-    slug: 'receipts', // SLUG DEVOLVIDO para abrir a página interna!
-    banner: '/images/projects/receipt.png.png',
-  }
-];
-
-export const allProjects: ProjectData[] = [...featuredProjects, ...additionalProjects];
+      {/* Imagem clicável para expandir */}
+      <div 
+        className="w-full md:w-[40%] shrink-0 cursor-pointer" 
+        onClick={() => setIsExpanded(!isExpanded)}
+      >
+        <div className="relative rounded-lg overflow-hidden border border-zinc-800 aspect-[16/10] bg-[#111]">
+          <img 
+            src={project.banner || 'https://via.placeholder.com/600x400?text=Project+Image'} 
+            alt={typeof name === 'string' ? name : 'Project'} 
+            className="w-full h-full object-cover grayscale-[0.8] opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-out"
+            onError={(e) => { (e.target as HTMLImageElement).src = 'https://via.placeholder.com/600x400?text=Project+Image'; }}
+          />
+        </div>
+      </div>
+      
+      <div className="flex-1 flex flex-col justify-between py-1 w-full">
+        <div>
+          <div className="flex flex-wrap justify-between items-start gap-4 mb-3">
+            
+            {/* Título clicável */}
+            <h3 
+              className="text-[17px] font-semibold text-zinc-200 flex items-center gap-2 font-ui group-hover:text-white transition-colors cursor-pointer"
+              onClick={() => setIsExpanded(!isExpanded)}
+            >
+              {name}
+            </h3>
+            
+            <div className="flex gap-2">
+              {/* Botão de Artigo Interno (Se tiver slug) ou Externo (Medium) */}
+              {project.slug ? (
+                <Link 
+                  to={`/case/${project.slug}`} 
+                  className="shadow-composite items-center flex font-medium justify-center bg-[rgb(26,_27,_28)] text-zinc-300 hover:text-white text-[12px] gap-[6px] pt-1.5 pr-2.5 pb-1.5 pl-2.5 rounded-md font-ui transition-all hover:bg-[#27272a]"
+                >
+                  {language === 'en' ? 'Read Article' : 'Ler Artigo'}
+                </Link>
+              ) : (
+                project.live && project.live.trim() !== '' && (
+                  <a 
+                    href={project.live} 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    className="shadow-composite items-center flex font-medium justify-center bg-[rgb(26,_27,_28)] text-zinc-300 hover:text-white text-[12px] gap-[6px] pt-1.5 pr-2.5 pb-1.5 pl-2.5 rounded-md font-ui transition-all hover:bg-[#27272a]"
+                  >
+                    <FaExternalLinkAlt className="text-[11px]" /> {language === 'en' ? 'Read Article' : 'Ler Artigo'}
+                  </a>
+                )
+              )}
+              
+              {project.github && project.github.trim() !== '' && (
+                <a href={project.github} target="_blank" rel="noreferrer" className="shadow-composite items-center flex font-medium justify-center bg-[rgb(26,_27,_28)] text-zinc-300 hover:text-white text-[12px] gap-[6px] pt-1.5 pr-2.5 pb-1.5 pl-2.5 rounded-md font-ui transition-all hover:bg-[#27272a]">
+                  <FaGithub className="text-[13px]" /> GitHub
+                </a>
+              )}
+            </div>
+          </div>
+          
+          {/* Descrição com sanfona (Accordion) */}
+          <div className="mb-4">
+            <p 
+              className={`text-[13.5px] text-zinc-400 leading-relaxed whitespace-pre-line font-ui group-hover:text-zinc-300 transition-colors cursor-pointer ${isExpanded ? '' : 'line-clamp-3'}`}
+              onClick={() => setIsExpanded(!isExpanded)}
+            >
+              {desc}
+            </p>
+            
+            <button 
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="mt-2 flex items-center gap-1.5 text-[12px] font-ui font-medium text-zinc-500 hover:text-zinc-300 transition-colors"
+            >
+              {isExpanded ? (
+                <>
+                  {language === 'en' ? 'Show less' : 'Mostrar menos'} <FaChevronUp className="text-[10px]" />
+                </>
+              ) : (
+                <>
+                  {language === 'en' ? 'Read more' : 'Ler mais'} <FaChevronDown className="text-[10px]" />
+                </>
+              )}
+            </button>
+          </div>
+        </div>
+        
+        <div>
+          <p className="text-[12px] font-medium text-zinc-500 mb-2 font-ui">
+            {language === 'en' ? 'Technologies Used:' : 'Tecnologias utilizadas:'}
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {project.tech.map((t, i) => (
+              <span key={i} className="text-[11px] font-medium text-zinc-300 bg-[rgb(26,_27,_28)] shadow-sm px-2 py-1 rounded-[4px] border border-zinc-800/50 font-ui group-hover:border-zinc-700 transition-colors">
+                {t}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  );
+}
