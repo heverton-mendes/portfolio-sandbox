@@ -10,7 +10,7 @@ export function Projects() {
   const { language } = useI18n();
 
   return (
-    <section className="container-max mt-8 mb-8"> 
+    <section className="container-max mt-8 mb-16"> 
       <div className="mb-6"> 
         <SectionTitle>{language === 'en' ? 'My Projects' : 'Meus Projetos'}</SectionTitle>
         {/* Aviso de Confidencialidade */}
