@@ -14,7 +14,7 @@ export function Loading() {
         animate={{ opacity: [0.5, 1, 0.5] }}
         transition={{ duration: 1.5, repeat: Infinity }}
       >
-        Just a second babe...
+        Just a second...
       </motion.p>
     </div>
   );
