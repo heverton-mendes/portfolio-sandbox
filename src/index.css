@@ -134,3 +134,51 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-border-hover);
 }
+
+@layer components {
+  /* Container principal do texto */
+  .article-body {
+    @apply text-zinc-300 font-ui text-[16px] leading-relaxed md:text-[17px] md:leading-loose tracking-wide;
+  }
+
+  /* Parágrafos com respiro ideal para leitura longa */
+  .article-body p {
+    @apply mb-6;
+  }
+
+  /* Títulos de seção (h3) com o detalhe lateral editorial */
+  .article-body h3 {
+    @apply text-2xl md:text-3xl font-bold text-white mt-14 mb-6 border-l-2 border-zinc-500 pl-5 py-1 tracking-tight;
+  }
+
+  /* Estilização refinada para listas */
+  .article-body ul {
+    @apply mb-8 pl-2 space-y-4;
+    list-style: none; /* Remove o bullet padrão feio */
+  }
+
+  /* Bullet points customizados (usando o ✦ da sua referência do Fable) */
+  .article-body li {
+    @apply relative pl-6 text-[15px] md:text-[16px] text-zinc-400;
+  }
+
+  .article-body li::before {
+    content: "✦";
+    @apply absolute left-0 text-zinc-600 text-[12px] top-[4px] md:top-[6px];
+  }
+
+  /* Negritos elegantes (brancos para destacar no fundo cinza) */
+  .article-body strong, .article-body b {
+    @apply text-zinc-100 font-semibold;
+  }
+
+  /* Citações e blocos de destaque (Pull Quotes) */
+  .article-body blockquote {
+    @apply p-6 border-l-2 border-zinc-500 bg-zinc-900/40 italic text-zinc-300 my-10 rounded-r-xl shadow-inner;
+  }
+  
+  /* Tags de código ou termos técnicos no meio do texto */
+  .article-body code {
+    @apply bg-zinc-800/60 px-1.5 py-0.5 rounded-[4px] text-zinc-200 text-[14px] font-mono border border-zinc-700/50;
+  }
+}
