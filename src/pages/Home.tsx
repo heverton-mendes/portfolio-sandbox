@@ -10,9 +10,11 @@ export default function Home() {
   return (
     <main className="pt-20">
       <HeroSection />
-      <SkillSection />
-      <Experience />
+      {/* Projetos subiram para logo abaixo da introdução */}
       <Projects />
+      <Experience />
+      {/* Skills desceram para logo após a experiência */}
+      <SkillSection />
       <UsesSection />
       <ContactMe />
     </main>
