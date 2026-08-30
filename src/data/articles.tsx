@@ -11,102 +11,122 @@ export const articlesData: ArticleContent = {
   'design-governance': {
     en: (
       <>
+        {/* Título de Apoio / Subtítulo */}
+        <h3 className="!mt-0 !border-none !pl-0 text-xl md:text-2xl text-zinc-400 font-normal">
+          Figma Governance: A three-tier structure for operational efficiency at scale
+        </h3>
+
         <p>
-          In the ecosystem of one of the country's largest financial institutions, the launch speed and modernization of digital payment products are critical to maintaining market leadership. Working as a Product Designer in the Payments division—an area supporting complex journeys for millions of users—I faced a challenge that went far beyond drawing interfaces: accelerated team growth was creating an invisible collapse in our efficiency.
-        </p>
-        <p>
-          This project was executed in three major phases: establishing a governance foundation, tactically applying it to my core product, and structurally preparing the team for Artificial Intelligence in design.
+          In the ecosystem of one of the country's largest financial institutions, the launch speed and modernization of digital payment products are critical to maintaining market leadership. During my nearly 4-year tenure as a full-time Product Designer (PwD) at Itaú, working within the Payments division—an area supporting complex financial journeys for millions of daily active users—I faced a challenge that went far beyond drawing interfaces.
         </p>
 
-        <h3>Phase 1: Diagnosing the Chaos and Restructuring Figma</h3>
-        <p>Before proposing solutions, I mapped three main pain points draining our productivity:</p>
+        <h3>The Challenge: Invisible Collapse</h3>
+        <p>
+          The accelerated growth of teams and products was creating an invisible collapse in our internal efficiency. Scattered files and the absence of operational standards created a massive effort just to locate final screens or understand the UX context across different squads. I mapped three main pain points draining our daily productivity:
+        </p>
         <ul>
           <li><strong>Low Discoverability:</strong> Scattered files required excessive investigative effort just to locate a production screen.</li>
           <li><strong>Cross-Functional Noise:</strong> Service Design partners, UX Writers, and stakeholders struggled to navigate files and understand actual project statuses.</li>
           <li><strong>Process Disconnection:</strong> The team adopted the Double Diamond theoretically, but in Figma, it resulted in contextless clusters of screens.</li>
         </ul>
+
+        {/* 
+          DICA: Para colocar um print do seu figma organizado, descomente o código abaixo e coloque o caminho da sua imagem
+        */}
+        {/* 
+        <img 
+          src="/images/prints/figma-organization.jpg" 
+          alt="Estrutura de pastas no Figma" 
+          className="w-full rounded-xl border border-zinc-800 my-10 shadow-[0_8px_30px_rgba(0,0,0,0.5)]"
+        /> 
+        */}
         
-        <p>To solve this, I designed a new Information Architecture tailored to our specific organizational reality, structured in the following hierarchy:</p>
+        <h3>Strategy & The 3-Tier Architecture</h3>
+        <p>
+          I based my strategy on the understanding that, in large operations, Figma acts as a sociotechnical system that requires structured governance to preserve organizational knowledge. I designed a new Information Architecture tailored to our specific reality, structured in three levels:
+        </p>
         <ul>
-          <li><strong>Management Level (Macro):</strong> Centralizing the entire ecosystem under the "Payments" management root folder, establishing a clear search boundary for our area.</li>
-          <li><strong>Coordination & Product Level (Meso):</strong> Creating folders for each coordination (RTs), branching out into specific folders for each product. Within each product, the environment was strictly divided into Product Evolution (daily work), Visioning (strategic concepts), and Research & Tests (protecting historical UX data).</li>
+          <li><strong>Management Level (Macro):</strong> Centralizing the entire ecosystem under the "Payments" management root folder, establishing a clear search boundary.</li>
+          <li><strong>Coordination & Product Level (Meso):</strong> Creating folders for each coordination (RTs), divided strictly into Product Evolution (daily work), Visioning (strategic concepts), and Research & Tests (protecting UX history).</li>
           <li><strong>File Level (Micro):</strong> Replacing loose files with Blueprints—standardized templates reflecting our design process (Discovery, Explorations, Handoff, Critiques, and Tests).</li>
         </ul>
 
-        <h3>Phase 2: From Process to Practice (Interactive Dashboard in "Meus Pagamentos")</h3>
+        <h3>From Practice to AI Preparation</h3>
         <p>
-          With governance in place, I applied this infrastructure to elevate the maturity of the "Meus Pagamentos" (My Payments) product. I used the newly organized files to better structure flow navigation, end-to-end journeys, metrics tracking, delivery history, links, and notifications.
+          With governance active, I applied this infrastructure to elevate the "Meus Pagamentos" (My Payments) product. I consolidated documentation into an interactive dashboard using <strong>Figma Make</strong>, actively encouraging its adoption by the design team.
         </p>
         <p>
-          All of this was consolidated into an interactive dashboard built with <strong>Figma Make</strong>. This initiative had a dual impact: it immortalized the product's documentation with absolute clarity, and it actively encouraged the practical adoption of Figma Make at the exact moment the design team was being pushed by leadership to use the new tool.
-        </p>
-
-        <h3>Phase 3: The Future Vision (Preparing for AI and MCP)</h3>
-        <p>
-          The restructuring of the Payments division had a strategic future objective: preparing the team for upcoming technological shifts. By providing adaptation time for designers to migrate to this new model, the plan was to facilitate the transformation of our Handoffs into AI-ready context.
-        </p>
-        <p>
-          The goal was to help time-constrained designers easily convert their standardized Handoffs into <code>.md</code> files. This would enable the adoption of <strong>MCP (Model Context Protocol)</strong>, drastically improving Design QA and allowing for the rapid creation of high-fidelity prototypes with direct AI assistance.
+          The final strategic goal was preparing the team for Artificial Intelligence. By organizing files systematically, we aimed to transform standardized Handoffs into <code>.md</code> files. This would enable the future adoption of <strong>MCP (Model Context Protocol)</strong>, optimizing Design QA and allowing the creation of AI-assisted high-fidelity prototypes.
         </p>
 
-        <h3>The Legacy</h3>
+        <h3>Results & Impact</h3>
         <p>
-          Unfortunately, these advanced AI integration proposals were never fully realized, as my time at the company came to an end due to a layoff. However, the implementation of the initial phases generated a drastic reduction in productive time wasted searching for and aligning files.
+          The implementation drastically reduced the productive time wasted on file searches and unnecessary alignment meetings. The reorganization eliminated cognitive load for designers starting new deliveries and provided instant visibility for leadership.
         </p>
         
         <blockquote>
-          This case proves that the true role of a systemic designer goes beyond drawing screens: it involves optimizing processes, reducing corporate time waste, and preparing an entire team's technological infrastructure for the future.
+          This project proves that the true role of a systemic designer in complex corporate environments goes far beyond drawing screens. Optimizing processes reduces operational waste, preserves knowledge history, and prepares an entire team's technological infrastructure for future automations.
         </blockquote>
       </>
     ),
     
     pt: (
       <>
+        {/* Título de Apoio / Subtítulo */}
+        <h3 className="!mt-0 !border-none !pl-0 text-xl md:text-2xl text-zinc-400 font-normal">
+          Governança no Figma: Estrutura em três camadas para eficiência operacional em design
+        </h3>
+
         <p>
-          No ecossistema de uma das maiores e mais tradicionais instituições financeiras do país, a velocidade de lançamento e a modernização de produtos digitais de pagamento são críticas para garantir a liderança no mercado. Atuando como Product Designer na Gerência de Pagamentos — uma área que sustenta jornadas complexas e atende a milhões de usuários — deparei-me com um desafio que ia muito além de desenhar interfaces: o crescimento acelerado de times e produtos estava gerando um colapso invisível na nossa eficiência.
-        </p>
-        <p>
-          O projeto foi estruturado em três grandes momentos: a criação de uma fundação de governança, a aplicação tática no meu produto principal e a preparação estrutural para o uso de Inteligência Artificial no design.
+          No ecossistema de uma das maiores e mais tradicionais instituições financeiras do país, a velocidade de lançamento e a modernização de produtos são críticas para manter a liderança de mercado. Durante meus quase 4 anos atuando como Product Designer CLT (PCD) no Banco Itaú, dentro da Gerência de Pagamentos — uma área responsável por sustentar jornadas financeiras complexas para milhões de usuários ativos diariamente — deparei-me com um desafio que ia muito além de desenhar interfaces.
         </p>
 
-        <h3>Fase 1: O Diagnóstico do Caos e a Reestruturação do Figma</h3>
-        <p>Antes de propor qualquer solução, mapeei três dores principais que drenavam nossa produtividade:</p>
+        <h3>O Desafio: Colapso Invisível</h3>
+        <p>
+          O crescimento acelerado de times e produtos estava gerando um colapso invisível na eficiência interna da gerência. Arquivos dispersos e a ausência de padrões operacionais criavam um esforço gigantesco para localizar telas finais ou para compreender o contexto de decisões de UX entre várias squads distintas. Antes de propor soluções, mapeei três dores principais que drenavam a produtividade diária:
+        </p>
         <ul>
-          <li><strong>Baixa Encontrabilidade:</strong> Arquivos espalhados pelo dashboard exigiam um esforço investigativo excessivo para localizar uma simples tela de produção.</li>
-          <li><strong>Ruído Cross-Functional:</strong> Parceiros de Service Design, UX Writing e stakeholders sofriam para navegar nos arquivos e entender o status real dos projetos.</li>
-          <li><strong>Desconexão de Processos:</strong> O time adotava o Duplo Diamante na teoria, mas no Figma resultava em amontoados de telas sem contexto.</li>
+          <li><strong>Baixa encontrabilidade:</strong> Arquivos espalhados pelo dashboard exigiam esforço investigativo excessivo para localizar uma simples tela de produção.</li>
+          <li><strong>Ruído cross-functional:</strong> Parceiros de Service Design, UX Writing e stakeholders sofriam para navegar nos arquivos e entender o status real de cada projeto.</li>
+          <li><strong>Desconexão de processos:</strong> O time adotava o Duplo Diamante na teoria, mas a falta de estrutura no Figma resultava em amontoados de telas sem contexto.</li>
         </ul>
+
+        {/* 
+          DICA: Para colocar um print do seu figma organizado, descomente o código abaixo e coloque o caminho da sua imagem
+        */}
+        {/* 
+        <img 
+          src="/images/prints/figma-organization.jpg" 
+          alt="Estrutura de pastas no Figma" 
+          className="w-full rounded-xl border border-zinc-800 my-10 shadow-[0_8px_30px_rgba(0,0,0,0.5)]"
+        /> 
+        */}
         
-        <p>Para resolver isso, estruturei uma nova Arquitetura de Informação alinhada à realidade da nossa área, organizada na seguinte hierarquia estrutural:</p>
+        <h3>Estratégia e a Arquitetura em 3 Níveis</h3>
+        <p>
+          A estratégia foi fundamentada no entendimento de que, em grandes operações, o Figma funciona como um sistema sociotécnico que exige governança estruturada para preservar o conhecimento organizacional. Decidi desenhar uma nova Arquitetura de Informação dividida em três níveis hierárquicos (Macro, Meso e Micro):
+        </p>
         <ul>
-          <li><strong>Nível Gerencial (Macro):</strong> Centralização de todo o ecossistema sob a pasta matriz da gerência de "Pagamentos", estabelecendo uma fronteira clara de busca para o nosso time.</li>
-          <li><strong>Nível de Coordenações e Produtos (Meso):</strong> Estruturação de pastas para cada coordenação (RTs), que se ramificavam nas pastas de cada produto. Para garantir a organização de cada produto, o ambiente foi dividido estritamente em Evolução do Produto (dia a dia), Visioning (conceitos estratégicos) e Pesquisas e Testes (blindando o histórico de UX).</li>
-          <li><strong>Nível de Arquivos (Micro):</strong> Substituição de arquivos soltos por Blueprints — templates padronizados baseados no processo de design (Discovery, Explorações, Handoff, Critiques e Testes).</li>
+          <li><strong>Nível Gerencial (Macro):</strong> Centralizei o ecossistema sob a pasta matriz da gerência de Pagamentos, estabelecendo uma fronteira de busca clara.</li>
+          <li><strong>Nível de Coordenações e Produtos (Meso):</strong> Organize pastas dividindo rigorosamente cada produto em Evolução do Produto (dia a dia), Visioning (conceitos estratégicos) e Pesquisas e Testes (historização de UX).</li>
+          <li><strong>Nível de Arquivos (Micro):</strong> Substituí arquivos avulsos por blueprints — templates padronizados baseados no processo de design (Discovery, Explorações, Handoff, Critiques e Testes).</li>
         </ul>
 
-        <h3>Fase 2: Do Processo à Prática (Painel Interativo em "Meus Pagamentos")</h3>
+        <h3>Da Prática à Preparação para IA</h3>
         <p>
-          Com a governança operando, apliquei essa infraestrutura para elevar a maturidade do produto "Meus Pagamentos". Utilizei os arquivos agora organizados para estruturar a navegação dos fluxos, das jornadas end-to-end, do acompanhamento de métricas, e do histórico e links de cada entrega.
+          Com a governança ativa, apliquei essa infraestrutura no produto Meus Pagamentos. Consolidei toda a documentação em um painel interativo utilizando a ferramenta <strong>Figma Make</strong>, o que incentivou a adoção prática pelo time de design.
         </p>
         <p>
-          Tudo isso foi consolidado na construção de um painel interativo utilizando o <strong>Figma Make</strong>. Essa iniciativa teve um impacto duplo: além de imortalizar a documentação do produto com clareza, ela estimulou ativamente a adoção prática do Figma Make no exato momento em que o time de design estava sendo cobrado pelas lideranças para utilizar a nova ferramenta.
-        </p>
-
-        <h3>Fase 3: A Visão de Futuro (Preparação para IA e MCP)</h3>
-        <p>
-          A reestruturação da gerência de Pagamentos tinha um objetivo futuro estratégico: preparar a equipe para os novos desafios tecnológicos. Com um tempo de adaptação garantido para que todos os designers migrassem para o novo modelo, o plano era que a nova estrutura facilitasse a transformação dos nossos arquivos de Handoff em contexto para IA.
-        </p>
-        <p>
-          O objetivo era ajudar designers — que operavam com tempo escasso — a transformar seus Handoffs padronizados em arquivos <code>.md</code>. Isso viabilizaria a adoção do <strong>MCP (Model Context Protocol)</strong>, elevando drasticamente a qualidade do QA de Design e permitindo futuras criações de protótipos rápidos e de alta fidelidade com o auxílio direto de Inteligência Artificial.
+          O objetivo estratégico final era preparar a infraestrutura do time para novos desafios tecnológicos. Transformando os handoffs da camada Micro em arquivos Markdown (<code>.md</code>), viabilizaríamos a adoção futura do <strong>MCP (Model Context Protocol)</strong>, otimizando o QA de design e permitindo a criação de protótipos de alta fidelidade com auxílio direto de Inteligência Artificial.
         </p>
 
-        <h3>O Legado</h3>
+        <h3>Resultados e Impacto</h3>
         <p>
-          Infelizmente, essas propostas de integração com IA não chegaram a acontecer, pois meu ciclo na empresa foi encerrado devido a um desligamento. No entanto, a implementação das fases iniciais gerou uma redução drástica de tempo produtivo desperdiçado em busca e alinhamento.
+          A implementação gerou uma redução drástica no tempo produtivo desperdiçado em buscas de arquivos e reuniões desnecessárias. A reorganização eliminou a carga cognitiva que os designers enfrentavam ao iniciar novas entregas e gerou visibilidade instantânea dos projetos para a liderança.
         </p>
         
         <blockquote>
-          Este case comprova que a verdadeira atuação do designer sistêmico vai além do desenho de telas: envolve otimizar processos, reduzir resíduos de tempo e preparar a infraestrutura tecnológica de um time inteiro para o futuro.
+          Este projeto provou que a verdadeira atuação de um designer sistêmico em ambientes corporativos complexos vai muito além do desenho de telas. A otimização de processos e a governança de ferramentas reduzem o desperdício operacional, preservam o histórico e preparam a equipe para as automações do futuro.
         </blockquote>
       </>
     ),
@@ -115,90 +135,84 @@ export const articlesData: ArticleContent = {
   'payments-hub': {
     en: (
       <>
+        <h3 className="!mt-0 !border-none !pl-0 text-xl md:text-2xl text-zinc-400 font-normal">
+          Financial Centralization: Unifying multiple disconnected flows into a single Payments Hub
+        </h3>
+
         <p>
-          Within a large-scale financial institution, I led the evolution of a digital payment experience dedicated to helping customers organize their financial routines. Originally, "Meus Pagamentos" (My Payments) functioned primarily as a shortcut screen—a simple gateway to disparate payment features.
-        </p>
-        <p>
-          Despite its basic structure, it handled a significant volume of monthly accesses, turning it into a strategic leverage point. The challenge shifted from merely facilitating shortcuts to transforming an entry point into a comprehensive financial organization hub.
+          During my nearly 4 years as a full-time Product Designer (PwD) at Itaú, I worked on the evolution of digital payment experiences. The "Meus Pagamentos" (My Payments) product, despite its high volume of daily accesses, historically operated as a simplified, static shortcut screen that connected the customer to disparate features across the app.
         </p>
 
         <h3>The Problem: A Fragmented Ecosystem</h3>
         <p>
-          Customers had to navigate disconnected paths to manage their financial commitments, facing issues such as multiple journeys for different payment types, a lack of consolidated overview, and poor visibility over what was paid, pending, or scheduled. Common customer pain points included:
+          The rapid organic growth of the organization led different teams to develop payment features at different times. This resulted in a fragmented ecosystem where customers had to navigate disconnected and confusing paths to pay, manage, and track financial commitments with the exact same original intent. Users lacked clarity on what was already scheduled or paid, and strongly desired proactive suggestions instead of having to actively hunt down their bills.
         </p>
+        
+        {/* Imagem Placeholder */}
+        {/* <img src="/images/prints/payments-hub.jpg" alt="Tela do Hub de Pagamentos" className="w-full rounded-xl border border-zinc-800 my-10 shadow-[0_8px_30px_rgba(0,0,0,0.5)]" /> */}
+
+        <h3>Strategy & Decisions</h3>
+        <p>
+          The strategy was based on the vision that, in large corporate environments, good design acts as a strategic bridge between engineering constraints, complex business rules, and human needs. I shifted the focus from isolated interface drawing to deep end-to-end journey mapping. Additionally, I restructured and modernized the product's UI Library, integrating new flows with the corporate Design System and establishing robust handoff documentation as a shared technical repository between product, technology, and UX writing.
+        </p>
+
+        <h3>The Process & Tactical Deliveries</h3>
+        <p>The project was structured into three tactical delivery fronts:</p>
         <ul>
-          <li><strong>Cognitive Overload:</strong> "I get lost in all the payment options."</li>
-          <li><strong>Lack of Predictability:</strong> "I don't know what's already scheduled versus what is still due."</li>
-          <li><strong>Proactive Friction:</strong> "Bills feel like something I have to hunt down rather than things that surface automatically."</li>
+          <li><strong>Conversational Assistant:</strong> Assisted in designing and accelerating an intelligent conversational experience, mapping multi-channel touchpoints (WhatsApp, email, and push notifications).</li>
+          <li><strong>Commitments & Batch Payments:</strong> Designed and handed off the commitments area and due date calendar, structuring a new batch payment journey allowing users to settle multiple bills seamlessly.</li>
+          <li><strong>Dynamic Smart Automations:</strong> Developed the first functional version of a dynamic carousel focused on easing the user's daily life, suggesting contextual shortcuts like recurring payment automation or Pix key creation based on current behavior.</li>
         </ul>
 
-        <h3>Solution & Scope of Work</h3>
+        <h3>Results & Impact</h3>
         <p>
-          Leveraging behavioral data and customer research, we pivoted toward a unified vision: the <strong>Payments Hub</strong>. My hands-on scope as Product Designer covered key strategic initiatives:
-        </p>
-        <ul>
-          <li><strong>Conversational Assistant:</strong> Assisted in designing and accelerating the rollout of an integrated conversational experience, mapping multi-channel touchpoints (WhatsApp, email, notifications).</li>
-          <li><strong>Commitments & Batch Payments:</strong> Modernized the calendar and bill management experience, introducing batch payments so users could settle multiple accounts in a single, seamless flow.</li>
-          <li><strong>Dynamic Smart Automations ("Facilite seu dia a dia"):</strong> Designed proactive carousels suggesting custom automations, Pix keys setup, and recurring transfer options based on user context.</li>
-        </ul>
-
-        <h3>Cross-Functional Collaboration & Governance</h3>
-        <p>
-          Operating at the intersection of business goals, user needs, and engineering constraints, I collaborated closely with Product, Content/UX Writing, and specialized squads (Pix, Autodebit, Limits). Every flow and documentation artifact served as a shared source of truth across disciplines, adopting the latest versions of the Design System.
-        </p>
-
-        <h3>Impact & Metrics</h3>
-        <p>
-          The success of the experience was tracked across usage dimensions, feedback loops, and customer satisfaction metrics. During my tenure, Customer Satisfaction (Likert scale) rose from <strong>33% to 59%</strong> within an ecosystem serving over 10 million monthly users.
+          The consolidated Payments Hub experience significantly transformed the financial management of millions of customers. During my direct involvement, Customer Satisfaction (Likert scale) rose from <strong>33% to 59%</strong>. This growth in an ecosystem serving over 10 million monthly accesses allowed the division to successfully meet its strategic business target for 2025.
         </p>
         
         <blockquote>
-          This project reinforced that design in financial products is about building bridges between Client, Business, Technology, and Experience — turning friction into clarity.
+          The evolution of the Payments Hub consolidated the practical lesson that UX decisions must be directly connected to real business impact metrics and behavior. Operating in a system of this scale proved the viability of overcoming operational complexities through clear processes and horizontal collaboration.
         </blockquote>
       </>
     ),
     
     pt: (
       <>
+        <h3 className="!mt-0 !border-none !pl-0 text-xl md:text-2xl text-zinc-400 font-normal">
+          Centralização financeira: Como unificar múltiplos fluxos desconectados em um único hub de pagamentos
+        </h3>
+
         <p>
-          Dentro de uma grande instituição financeira, atuei na evolução da experiência de pagamentos digitais, em uma frente responsável por ajudar clientes a organizarem sua rotina financeira. Antes dessa evolução, a área de "Meus Pagamentos" funcionava majoritariamente como uma tela de atalhos — uma porta de entrada simples para diferentes funcionalidades dispersas.
-        </p>
-        <p>
-          Apesar da simplicidade inicial, o alto volume de acessos mensais transformou a tela em um ponto ultraestratégico. O desafio deixou de ser apenas facilitar cliques e passou a ser: <em>como transformar um ponto de entrada em um hub onde o cliente consegue visualizar, organizar e acompanhar sua vida financeira?</em>
+          Durante minha jornada de quase 4 anos como Product Designer CLT (PCD) no Banco Itaú, atuei na evolução da experiência de pagamentos digitais. O produto Meus Pagamentos, apesar de possuir alto volume de acessos diários, funcionava de maneira simplificada, operando historicamente como uma porta de entrada estática de atalhos que conectava o cliente a ferramentas dispersas pelo aplicativo.
         </p>
 
-        <h3>O Problema: Ecossistema Fragmentado</h3>
+        <h3>O Desafio: Ecossistema Fragmentado</h3>
         <p>
-          Os clientes precisavam navegar por caminhos desconectados para encontrar informações sobre seus compromissos financeiros. As principais dores mapeadas incluíam múltiplos fluxos para diferentes tipos de pagamento, baixa consolidação de compromissos e dificuldade em prever o que estava pago, pendente ou programado. Falas recorrentes dos clientes refletiam isso:
+          O crescimento orgânico da organização fez com que diferentes equipes desenvolvessem recursos de pagamento em momentos distintos. Isso resultou em um ecossistema fragmentado, onde os clientes precisavam percorrer caminhos desconectados e confusos para pagar, gerir e acompanhar compromissos financeiros. Os usuários sentiam falta de clareza sobre o que já havia sido pago ou programado, e manifestavam o desejo de receber notificações proativas que evitassem a necessidade de buscar boletos ativamente.
         </p>
+
+        {/* Imagem Placeholder */}
+        {/* <img src="/images/prints/payments-hub.jpg" alt="Tela do Hub de Pagamentos" className="w-full rounded-xl border border-zinc-800 my-10 shadow-[0_8px_30px_rgba(0,0,0,0.5)]" /> */}
+
+        <h3>Estratégia e Decisões</h3>
+        <p>
+          A estratégia baseou-se na visão de que o bom design atua como uma ponte estratégica entre restrições tecnológicas, regras de negócio e necessidades humanas. A decisão principal foi migrar do desenho isolado de interfaces para um mapeamento profundo das jornadas ponta a ponta. Adicionalmente, reestruturei e modernizei a biblioteca de componentes (UI Library), integrando os novos fluxos de forma consistente com o Design System corporativo e estabelecendo uma documentação de handoff robusta para tecnologia.
+        </p>
+
+        <h3>O Processo e Entregas Táticas</h3>
+        <p>O desenvolvimento do projeto foi estruturado em três frentes de entregas táticas:</p>
         <ul>
-          <li><strong>Falta de Clareza:</strong> "Eu me perco nas opções de pagamento."</li>
-          <li><strong>Previsibilidade:</strong> "Não sei direito o que já está programado e o que ainda falta pagar."</li>
-          <li><strong>Proatividade:</strong> "Parece que eu tenho que procurar minhas contas, em vez delas aparecerem para mim."</li>
+          <li><strong>Assistente Conversacional:</strong> Auxiliei na criação de uma experiência inteligente, mapeando a interação do usuário ao receber notificações integradas via WhatsApp, e-mail e push do sistema.</li>
+          <li><strong>Gestão de Compromissos e Pagamento em Lote:</strong> Conduzi o design da área de calendário de vencimentos, estruturando uma nova jornada de pagamento de boletos em lote que possibilitou a quitação de múltiplos boletos em um único fluxo.</li>
+          <li><strong>Automações Inteligentes Dinâmicas:</strong> Desenvolvi a primeira versão de um carrossel dinâmico sugerindo atalhos contextuais (automação de pagamentos recorrentes e chaves Pix) com base no comportamento atual do cliente.</li>
         </ul>
 
-        <h3>Solução e Escopo de Atuação</h3>
+        <h3>Resultados e Impacto</h3>
         <p>
-          Com base em dados de uso e pesquisas, estruturamos a visão do <strong>Hub de Pagamentos</strong>. Minha atuação como Product Designer envolveu frentes críticas de entrega:
-        </p>
-        <ul>
-          <li><strong>Assistente Conversacional:</strong> Auxiliei na criação e aceleração do lançamento de um assistente conversacional, mapeando interações integradas com canais de comunicação (WhatsApp, e-mail, notificações).</li>
-          <li><strong>Gestão de Compromissos e Pagamento em Lote:</strong> Conduzi o handoff e a modernização da área de compromissos e calendário, estruturando a jornada de pagamento em lote para que o cliente pudesse quitar múltiplos boletos em um único fluxo.</li>
-          <li><strong>Automações Dinâmicas ("Facilite seu dia a dia"):</strong> Antecipei a primeira versão de um carrossel dinâmico baseado no momento do cliente, sugerindo atalhos inteligentes (criação de chaves Pix, automação de pagamentos recorrentes).</li>
-        </ul>
-
-        <h3>Colaboração e Governança Cross-Functional</h3>
-        <p>
-          Atuei conectando restrições técnicas, regras de negócio e necessidades humanas. Trabalhei lado a lado com Produto, Engenharia e o time de Content/UX Writing, alinhando fluxos às diretrizes atualizadas do Design System do banco.
-        </p>
-
-        <h3>Resultados e Impacto nas Métricas</h3>
-        <p>
-          O sucesso da experiência foi acompanhado por meio de dados de uso, pesquisas de percepção e indicadores quantitativos. Durante minha atuação no produto, a Satisfação do Cliente (escala Likert) subiu de <strong>33% para 59%</strong> em um ecossistema com mais de 10 milhões de acessos mensais.
+          A experiência consolidada do Hub de Pagamentos transformou o gerenciamento financeiro de milhões de clientes. Durante o período do meu envolvimento direto no produto, a Satisfação do Cliente (medida através da escala Likert) subiu de <strong>33% para 59%</strong>. Esse crescimento em um ecossistema que transaciona mais de 10 milhões de acessos mensais permitiu que a gerência atingisse o seu target estratégico planejado para 2025.
         </p>
         
         <blockquote>
-          Este projeto consolidou uma visão essencial: em produtos financeiros complexos, o bom design não decora telas — ele constrói pontes sólidas entre o Cliente, o Negócio e a Tecnologia.
+          A evolução do Hub de Pagamentos consolidou o aprendizado de que decisões de UX precisam estar conectadas a métricas de impacto real de negócios. A atuação como designer num sistema desse porte reforçou meu repertório de superar complexidades operacionais por meio de metodologias consistentes de design.
         </blockquote>
       </>
     ),
@@ -207,96 +221,96 @@ export const articlesData: ArticleContent = {
   'open-finance': {
     en: (
       <>
+        <h3 className="!mt-0 !border-none !pl-0 text-xl md:text-2xl text-zinc-400 font-normal">
+          Regulatory Translation: Simplifying the Open Finance consent journey
+        </h3>
+
         <p>
-          During my tenure as a Product Designer in digital financial products, I participated in the evolution of experiences related to the payments and Open Finance ecosystem. Open Finance represents one of the most complex scenarios for financial digital products because it combines layers that are normally invisible to the customer: regulations, business rules, system integrations, security, technical dependencies, and cross-product journeys.
-        </p>
-        <p>
-          Beyond building new features, the work involved a recurring challenge in large-scale tech products: modernizing legacy experiences built on previous product iterations and older component libraries, while ensuring full consistency, accessibility, and improved usability.
+          Over the course of my nearly 4 years acting as a full-time Product Designer (PwD) at Itaú, I worked on digital products aimed at evolving the payments and Open Finance ecosystem. This environment deals with crucial financial transactions and data sharing, where clarity and security are fundamental for the millions of customers interacting with the institution daily.
         </p>
 
-        <h3>The Challenge: Balancing Modernization and Ecosystem Complexity</h3>
+        <h3>The Challenge: Navigating Systemic Complexity</h3>
         <p>
-          The payments ecosystem was in constant motion due to regulatory shifts, technological advancements, and evolving customer needs. The work required balancing two parallel fronts:
+          The Open Finance ecosystem represents one of the most complex scenarios in digital product design. It combines invisible layers such as rigid regulations, complex business rules, security integrations, and legacy technology dependencies. The main challenge was to modernize legacy journeys (operating on desktop and mobile with outdated components) and adapt them to the new corporate Design System. 
         </p>
+        <p>
+          The guiding question was: <em>How do we modernize existing experiences and create new solutions while keeping things radically simple for the customer in a highly complex regulatory environment?</em>
+        </p>
+
+        {/* Imagem Placeholder */}
+        {/* <img src="/images/prints/open-finance.jpg" alt="Fluxo Open Finance" className="w-full rounded-xl border border-zinc-800 my-10 shadow-[0_8px_30px_rgba(0,0,0,0.5)]" /> */}
+
+        <h3>Strategy & Decisions</h3>
+        <p>
+          The strategy was based on the premise that simplicity in regulated systems is the result of technical negotiation, not just aesthetic redesign. I positioned design as a translation layer between data system complexity and human perception, ensuring the user only needed to understand the next step without decoding the underlying technical processes. 
+        </p>
+        <p>
+          The core decision was using high-fidelity prototypes as active technical negotiation tools with engineering and product teams before writing any code, guaranteeing that usability proposals were viable against system limitations.
+        </p>
+
+        <h3>Process & Collaborative Alignment</h3>
+        <p>The project was executed through multidisciplinary cooperation, divided into functional stages:</p>
         <ul>
-          <li><strong>Experience Modernization:</strong> Updating components, adapting to new visual guidelines, improving consistency across desktop and mobile journeys.</li>
-          <li><strong>Ecosystem Complexity:</strong> Navigating regulatory compliance (Central Bank guidelines), technical limitations, and cross-functional dependencies.</li>
+          <li><strong>Deep Journey Analysis:</strong> Studied the normative requirements of the Central Bank's Experience Guide, mapping existing flows to identify technological dependencies and impacts.</li>
+          <li><strong>Legacy Migration & Evolution:</strong> Led the transition of old mobile and desktop interfaces to the updated Design System patterns, ensuring consistency and accessibility without breaking familiar navigation logic.</li>
+          <li><strong>Systemic Alignment:</strong> Worked closely with engineers so that the design didn't operate in a silo, adjusting consent and sharing screens according to what the technological integrations could actually support.</li>
         </ul>
+
+        <h3>Results & Impact</h3>
+        <p>
+          The main result was the delivery of a consistent regulatory flow that the engineering team could fully support and successfully implement. The integrated experience reduced user cognitive load, translating complex data rules into intelligible steps. Qualitatively, the unified design rebuilt brand consistency and increased consent clarity, helping to build trust in automated financial flows. 
+        </p>
         
         <blockquote>
-          The core question was: How to modernize existing experiences and design new solutions while keeping things radically simple for the customer in a highly complex environment?
-        </blockquote>
-
-        <h3>Role & Cross-Functional Approach</h3>
-        <p>
-          Operating within the payments-focused Open Finance front, my scope connected User Needs + Business Goals + Technology + Regulation + Design System. Key activities included:
-        </p>
-        <ul>
-          <li><strong>Journey Mapping & Architecture:</strong> Analyzing current desktop/mobile flows, understanding Central Bank experience guidelines, and assessing technical impacts.</li>
-          <li><strong>Legacy Modernization:</strong> Auditing existing interfaces, adapting them to new Design System components, and reviewing interactions without breaking continuity for active users.</li>
-          <li><strong>Collaborative Alignment:</strong> Bridging Product, Engineering, Business, Research, and specialized squads (such as Data and Payments) to prevent isolated silos and build a cohesive ecosystem vision.</li>
-        </ul>
-
-        <h3>The Role of Design in Regulated Products</h3>
-        <p>
-          In regulated financial environments, the biggest challenge is rarely drawing a new screen. It is answering questions like: How do you explain a feature the customer has never seen before? How do you build trust in automated actions? How do you balance innovation with tight security regulations? Design acts as the translation layer between intricate systems and human beings.
-        </p>
-
-        <h3>Key Learnings</h3>
-        <p>
-          Working with Open Finance reinforced a core conviction: the more complex the system behind a product, the simpler the front-end experience must feel. 
-        </p>
-        
-        <blockquote>
-          Designing complex products isn't just about creating brand-new solutions. It is about understanding what already exists, finding viable paths for evolution, and turning heavy systemic rules into human experiences.
+          Working with Open Finance demonstrated that in highly regulated corporate environments, product design plays a strategic role in connecting human needs to technical and normative possibilities. User-friendliness is the ultimate result of decoding complex systems transparently and securely.
         </blockquote>
       </>
     ),
     
     pt: (
       <>
+        <h3 className="!mt-0 !border-none !pl-0 text-xl md:text-2xl text-zinc-400 font-normal">
+          Tradução regulatória: Simplificação da jornada de consentimento no Open Finance
+        </h3>
+
         <p>
-          Durante minha atuação como Product Designer em produtos financeiros digitais, participei da evolução de experiências relacionadas ao ecossistema de pagamentos e Open Finance. O Open Finance representa um dos cenários mais complexos para produtos digitais, pois combina camadas que normalmente ficam invisíveis para o cliente: regulamentações, regras de negócio, integrações entre sistemas, segurança e dependências técnicas.
-        </p>
-        <p>
-          Além de construir novas soluções, o trabalho envolvia um desafio recorrente: modernizar jornadas legadas. Parte das experiências funcionava em ambientes desktop e mobile construídos em versões anteriores, utilizando componentes antigos. Com a evolução do Design System, surgiu a necessidade de atualizar essas jornadas mantendo consistência, acessibilidade e fluidez.
+          Ao longo dos meus quase 4 anos atuando como Product Designer CLT (PCD) no Banco Itaú, trabalhei em produtos digitais voltados para a evolução do ecossistema de pagamentos e Open Finance. Esse ecossistema lida com transações financeiras e compartilhamento de dados cruciais, onde a clareza e a segurança são fundamentais para os milhões de clientes que interagem diariamente com a instituição.
         </p>
 
-        <h3>O Desafio: Complexidade Ecossistêmica e Modernização</h3>
+        <h3>O Desafio: Navegando na Complexidade Sistêmica</h3>
         <p>
-          O ecossistema estava em constante transformação impulsionado por mudanças regulatórias e novas necessidades dos clientes. O trabalho exigia equilibrar duas frentes simultâneas:
+          O ecossistema do Open Finance representa um dos cenários mais complexos no design financeiro. Ele combina camadas invisíveis para o cliente, como regulamentações rígidas, regras de negócios, integrações de segurança e dependências de tecnologia legada. O desafio principal consistia em modernizar as jornadas legadas (que operavam em ambientes desktop e mobile com componentes desatualizados) e adaptá-las aos novos padrões do Design System corporativo.
         </p>
+        <p>
+          A pergunta central que guiou o projeto foi: <em>Como modernizar experiências existentes e criar novas soluções mantendo a simplicidade para o cliente em um ambiente de alta complexidade técnica e regulatória?</em>
+        </p>
+
+        {/* Imagem Placeholder */}
+        {/* <img src="/images/prints/open-finance.jpg" alt="Fluxo Open Finance" className="w-full rounded-xl border border-zinc-800 my-10 shadow-[0_8px_30px_rgba(0,0,0,0.5)]" /> */}
+
+        <h3>Estratégia e Decisões</h3>
+        <p>
+          A estratégia adotada partiu do princípio de que a simplicidade em sistemas regulados é fruto de negociação técnica e não apenas de redesenho estético. Decidi posicionar o design como uma camada de tradução entre a complexidade do sistema de dados e a percepção humana, de modo que o usuário precisasse apenas compreender o passo seguinte da jornada.
+        </p>
+        <p>
+          A decisão central foi utilizar protótipos de alta fidelidade como ferramentas ativas de negociação técnica com as equipes de tecnologia e produto antes do início do desenvolvimento do código, garantindo a viabilidade das propostas de usabilidade.
+        </p>
+
+        <h3>Processo e Alinhamento Colaborativo</h3>
+        <p>O processo dividiu-se em três etapas funcionais de forte cooperação multidisciplinar:</p>
         <ul>
-          <li><strong>Modernização Visual e Estrutural:</strong> Atualização de componentes, adaptação a novos padrões e refinamento de jornadas desktop e mobile.</li>
-          <li><strong>Navegação Regulatória:</strong> Atendimento estrito aos requisitos do Guia de Experiência do Banco Central, limitantes técnicos e alinhamento entre múltiplas áreas.</li>
+          <li><strong>Análise Aprofundada de Jornadas:</strong> Estudei os requisitos normativos do Guia de Experiência do Banco Central, mapeando os fluxos existentes para identificar os impactos tecnológicos.</li>
+          <li><strong>Migração e Evolução de Legados:</strong> Conduzi a transição das interfaces antigas (mobile e desktop) para os padrões atualizados do Design System, garantindo acessibilidade sem quebrar a lógica de navegação familiar.</li>
+          <li><strong>Alinhamento Sistêmico:</strong> Trabalhei em conjunto com engenheiros e gerentes de produto ajustando as telas de consentimento e compartilhamento conforme o que as integrações tecnológicas realmente suportavam, evitando silos.</li>
         </ul>
+
+        <h3>Resultados e Impacto</h3>
+        <p>
+          O principal resultado foi a entrega de um fluxo regulatório consistente que a equipe de engenharia conseguiu apoiar e implementar com sucesso. A experiência integrada reduziu a carga cognitiva do usuário, traduzindo regras complexas de dados em etapas inteligíveis. O design unificado restabeleceu a consistência da marca e ajudou a construir confiança nos fluxos automatizados do ecossistema financeiro.
+        </p>
         
         <blockquote>
-          A pergunta central era: Como modernizar experiências existentes e criar novas soluções mantendo simplicidade para o cliente em um ambiente altamente complexo?
-        </blockquote>
-
-        <h3>Atuação e Colaboração Cross-Functional</h3>
-        <p>
-          Atuei na frente de Open Finance conectando Cliente, Negócio, Tecnologia, Regulamentação e Design System. Minhas principais frentes envolveram:
-        </p>
-        <ul>
-          <li><strong>Análise de Jornadas:</strong> Compreensão profunda das regras do Banco Central, mapeamento de fluxos atuais e levantamento de impactos técnicos.</li>
-          <li><strong>Evolução de Legados:</strong> Migração de interfaces antigas para os novos padrões do Design System sem quebrar a continuidade para quem já utilizava o serviço.</li>
-          <li><strong>Alinhamento Sistêmico:</strong> Trabalho colaborativo com Produto, Engenharia e frentes irmãs (como Dados e Pagamentos), garantindo que o design funcionasse de forma integrada e não em silos isolados.</li>
-        </ul>
-
-        <h3>O Papel do Design em Produtos Regulados</h3>
-        <p>
-          Em produtos regulados, o maior desafio não é desenhar interfaces, mas responder a perguntas difíceis: <em>Como explicar uma funcionalidade inédita? Como gerar confiança em fluxos automatizados? Como equilibrar inovação e rigor normativo?</em> O Design atua aqui como uma camada essencial de tradução entre a engrenagem sistêmica e a percepção humana.
-        </p>
-
-        <h3>Aprendizados e Reflexão Final</h3>
-        <p>
-          Trabalhar com Open Finance consolidou uma visão definitiva na minha trajetória: quanto mais complexo é o sistema por trás de um produto, mais simples e intuitiva deve ser a experiência na ponta.
-        </p>
-        
-        <blockquote>
-          Projetar produtos complexos não é apenas criar novas soluções do zero. É compreender o legado, desenhar caminhos viáveis de evolução e transformar a alta complexidade técnica em experiências humanas e confiáveis.
+          O trabalho no Open Finance demonstrou que, em ambientes corporativos altamente regulados, o design desempenha um papel estratégico ao conectar necessidades humanas às possibilidades normativas. A facilidade de uso na ponta é o resultado de decodificar sistemas complexos de forma transparente e segura.
         </blockquote>
       </>
     ),
@@ -305,87 +319,96 @@ export const articlesData: ArticleContent = {
   'receipts': {
     en: (
       <>
+        <h3 className="!mt-0 !border-none !pl-0 text-xl md:text-2xl text-zinc-400 font-normal">
+          Rescuing operational context for large-scale digital receipts modernization
+        </h3>
+
         <p>
-          During my tenure as a Product Designer in a large-scale financial institution, I led the evolution of a critical digital journey for customers: the consultation and sharing of payment receipts. Receipts play an essential role in people's financial lives, serving moments of transaction confirmation, organization, dispute, and tracking.
-        </p>
-        <p>
-          Due to confidentiality constraints, specific product details and internal interfaces cannot be displayed, but here I share the process, challenges, and key learnings involved in modernizing this experience.
+          As part of my nearly 4-year journey working as a full-time Product Designer (PwD) at Itaú, I led the evolution of the consultation and receipt sharing journey. Receipts represent an essential component in clients' financial lives, directly used for organization, transaction confirmation, dispute resolution, and tracking.
         </p>
 
-        <h3>The Initial Scenario & Legacy Context</h3>
+        <h3>The Challenge: Modernizing Legacies</h3>
         <p>
-          The challenge began even before the redesign phase. The product was navigating a period of design organization modernization, which included a massive tool migration and Design System evolution. When I joined, part of the product's history was tied to legacy files and previous workflows. Rebuilding the context required mapping existing screens, understanding current flows, and identifying patterns directly from production.
+          The initial scenario required dealing with the absence of user behavioral data on a legacy experience, making it difficult to understand how people found and organized their receipts. Concurrently, the design organization was migrating tools and evolving its Design System. 
+        </p>
+        <p>
+          Since previous design documentation was unavailable, I had to rebuild the visual context by mapping screens directly from the production environment and recovering operational history. The greatest challenge was designing a modern interface that communicated with an aging storage infrastructure—characterized by massive historical data volumes—without compromising the trust of a critical journey.
         </p>
 
-        <h3>The Challenges</h3>
-        <p>The journey presented clear opportunities for enhancement across multiple dimensions:</p>
+        {/* Imagem Placeholder */}
+        {/* <img src="/images/prints/comprovantes.jpg" alt="Evolução de Comprovantes" className="w-full rounded-xl border border-zinc-800 my-10 shadow-[0_8px_30px_rgba(0,0,0,0.5)]" /> */}
+
+        <h3>Strategy & Decisions</h3>
+        <p>
+          The design strategy shifted from a "screen-drawing" approach to one focused on real user needs. The decision to recover the operational history was made to ensure the visual modernization respected the trust already established by the journey. Given the technical limitations of legacy databases, I prioritized viable adjustments that brought immediate functional gains, balancing improvements between the external customer journey and internal support tools.
+        </p>
+
+        <h3>Process & Collaborative Execution</h3>
+        <p>The project was executed collaboratively across Product, Engineering, and Research teams:</p>
         <ul>
-          <li><strong>Information Clarity & Hierarchy:</strong> Better data layout for quick comprehension.</li>
-          <li><strong>Navigation & Organization:</strong> Reducing friction in finding past documents.</li>
-          <li><strong>Technical Constraints:</strong> Working around legacy storage systems and massive historical data volumes.</li>
+          <li><strong>Recovery & Mapping:</strong> Led the reconstruction of the entire visual context by mapping production screens to recover the system's scattered operational history.</li>
+          <li><strong>User Requirements Definition:</strong> Identified the most urgent customer needs, prioritizing the expansion of the consultation period (search amplitude) and content organization via advanced category and transaction type filters.</li>
+          <li><strong>Parallel Support Redesign:</strong> To ensure end-to-end consistency, I simultaneously worked on modernizing the internal service platform used by operational support teams, validating usability proposals directly with internal users.</li>
         </ul>
-        
-        <blockquote>
-          The central question was: How to modernize an existing experience without losing the trust inherent to a critical financial journey?
-        </blockquote>
 
-        <h3>Approach & Cross-Functional Collaboration</h3>
+        <h3>Results & Impact (PRAD 2024 Award)</h3>
         <p>
-          Working closely with Product, Engineering, Research, and specialized business units, I shifted the focus from a "screen-based" mindset to a "needs-based" approach. Users needed simple outcomes: viewing receipts over a longer period, easier filtering, and intuitive categorization.
+          The new receipts experience modernized financial data consultation and sharing for millions of users. Qualitatively, the project enabled much clearer navigation with efficient filters and expanded retroactive search, alongside optimizing internal service flows. 
         </p>
         <p>
-          Beyond the customer-facing journey, I also modernized an internal service platform utilized by operations teams. By prototyping and testing directly with internal users, we validated proposals that increased daily service efficiency.
-        </p>
-
-        <h3>Results & Learnings</h3>
-        <p>
-          This project reinforced a core principle of Product Design: modernizing an existing product isn't just about updating an interface. It requires recovering lost knowledge, understanding human needs, negotiating with legacy technology, and building alignment.
+          Because of the success and systemic impact of this technical work, I was recognized by the institution with the <strong>PRAD 2024 (High-Performance Award)</strong>.
         </p>
         
         <blockquote>
-          In financial products where trust is paramount, every experience improvement must balance: Client + Technology + Business + Operations.
+          The evolution of this product demonstrated that the role of a strategic designer in large corporations involves recovering dispersed organizational knowledge and acting as an articulator of viable solutions in the face of technical limitations.
         </blockquote>
       </>
     ),
     
     pt: (
       <>
+        <h3 className="!mt-0 !border-none !pl-0 text-xl md:text-2xl text-zinc-400 font-normal">
+          Resgate de contexto operacional para redesenho de comprovantes em larga escala
+        </h3>
+
         <p>
-          Durante minha atuação como Product Designer em uma instituição financeira de grande escala, participei da evolução de uma jornada digital essencial para clientes: a consulta e o compartilhamento de comprovantes. Os comprovantes possuem um papel fundamental na vida financeira das pessoas, sendo utilizados em momentos de confirmação, organização, contestação e acompanhamento de transações.
-        </p>
-        <p>
-          Por questões de confidencialidade, detalhes específicos do produto e interfaces internas não serão apresentados, mas compartilho aqui o processo, os desafios e os aprendizados envolvidos na evolução dessa experiência.
+          Como parte da minha trajetória de quase 4 anos atuando como Product Designer CLT (PCD) no Banco Itaú, atuei na evolução da jornada de consulta e compartilhamento de comprovantes. Os comprovantes representam um componente essencial na vida financeira dos clientes, sendo utilizados diretamente para fins de organização, confirmação, contestação e acompanhamento de transações.
         </p>
 
-        <h3>O Cenário Inicial e Sistemas Legados</h3>
+        <h3>O Desafio: Modernizando Legados</h3>
         <p>
-          O desafio começou antes mesmo do redesenho da interface. O produto passava por um momento de modernização da organização de design, incluindo migração de ferramentas e evolução do Design System. Grande parte do contexto visual precisou ser reconstruída a partir do ambiente de produção, mapeando telas e recuperando o histórico operacional.
+          O cenário inicial exigia lidar com a ausência de dados comportamentais sobre uma experiência de uso legada. Somado a isso, a organização de design passava por um período de migração de ferramentas e evolução de seu Design System. Como a documentação de design anterior estava indisponível, foi necessário reconstruir o contexto visual mapeando as telas diretamente do ambiente de produção e recuperando o histórico operacional. 
         </p>
         <p>
-          A proposta visual precisava conversar com uma estrutura tecnológica antiga de armazenamento, lidando com um grande volume histórico de dados, modelos de dados legados e a necessidade de uma evolução gradual. O design teve de responder a uma pergunta central:
+          O maior desafio foi projetar uma interface moderna que conversasse com uma infraestrutura antiga de armazenamento, caracterizada por um enorme volume de dados e modelos legados, sem comprometer a confiança de uma jornada crítica.
         </p>
-        
-        <blockquote>
-          Como modernizar uma experiência existente sem perder a confiança de uma jornada financeira crítica?
-        </blockquote>
 
-        <h3>Atuação e Colaboração Multidisciplinar</h3>
+        {/* Imagem Placeholder */}
+        {/* <img src="/images/prints/comprovantes.jpg" alt="Evolução de Comprovantes" className="w-full rounded-xl border border-zinc-800 my-10 shadow-[0_8px_30px_rgba(0,0,0,0.5)]" /> */}
+
+        <h3>Estratégia e Decisões</h3>
         <p>
-          Em parceria estreita com Produto, Engenharia, Pesquisa e áreas especialistas, direcionamos o foco de uma abordagem baseada em "telas" para uma abordagem baseada em "necessidades reais". Identificamos que os usuários precisavam de melhorias simples, como:
+          A estratégia de design mudou o foco do "desenho de telas" para as necessidades reais dos usuários. O mapeamento minucioso dos fluxos garantiu que a modernização visual respeitasse a confiança já estabelecida. Diante das restrições de tecnologia, optei por priorizar ajustes viáveis que trouxessem ganhos funcionais imediatos, dividindo as melhorias entre a jornada externa do cliente e as ferramentas internas de suporte, mantendo o equilíbrio entre tecnologia, negócio e operação.
         </p>
+
+        <h3>O Processo e Execução Colaborativa</h3>
+        <p>O projeto foi executado de forma colaborativa com as equipes de Produto, Engenharia e Pesquisa:</p>
         <ul>
-          <li><strong>Amplitude de Consulta:</strong> Expansão do período disponível para busca de comprovantes.</li>
-          <li><strong>Filtros Avançados:</strong> Melhor organização por categorias e tipos de transação.</li>
-          <li><strong>Ferramentas Internas:</strong> Modernização paralelamente de uma plataforma de atendimento utilizada por equipes de suporte, validando propostas diretamente com os usuários internos.</li>
+          <li><strong>Recuperação e Mapeamento:</strong> Conduzi a reconstrução de todo o contexto visual mapeando as telas em produção para recuperar o histórico operacional disperso do sistema.</li>
+          <li><strong>Definição de Requisitos de Usuário:</strong> Identifiquei as necessidades mais urgentes, priorizando a ampliação do período de consulta (amplitude de busca) e a organização do conteúdo por meio de filtros avançados por categorias.</li>
+          <li><strong>Redesenho Paralelo do Suporte:</strong> Para garantir a consistência de ponta a ponta, atuei paralelamente na modernização da plataforma de atendimento interna utilizada pelas equipes de suporte operacional.</li>
         </ul>
 
-        <h3>Resultados e Aprendizados</h3>
+        <h3>Resultados e Impacto (Prêmio PRAD 2024)</h3>
         <p>
-          Esse projeto reforçou uma visão essencial sobre Product Design: modernizar um produto corporativo existente não significa apenas atualizar sua interface. Significa recuperar conhecimento perdido, entender pessoas, negociar com restrições tecnológicas e construir alinhamento interno.
+          A nova experiência modernizou a consulta de dados financeiros para milhões de usuários. O projeto viabilizou uma navegação muito mais clara, além de otimizar o fluxo de atendimento interno e estabelecer as bases necessárias para a coleta de métricas de UX.
+        </p>
+        <p>
+          Pelo sucesso e impacto sistêmico deste trabalho técnico, fui reconhecido pela instituição com o <strong>prêmio PRAD 2024 (Prêmio de Alto Rendimento)</strong> pela qualidade das entregas.
         </p>
         
         <blockquote>
-          Em produtos financeiros, onde a confiança é o pilar central, cada melhoria de experiência deve equilibrar de forma harmoniosa: Cliente + Tecnologia + Negócio + Operação.
+          A evolução deste produto demonstrou que o papel de um designer estratégico envolve recuperar conhecimento organizacional disperso e atuar como um articulador de soluções viáveis. O sucesso de um produto financeiro reside na habilidade de balancear a experiência do cliente com o legado tecnológico.
         </blockquote>
       </>
     ),
