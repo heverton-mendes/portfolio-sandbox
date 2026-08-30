@@ -37,8 +37,8 @@ export const articlesData: ArticleContent = {
         </p>
         <ul>
           <li><strong>Management Level (Macro):</strong> Centralizing the entire ecosystem under the "Payments" management root folder, establishing a clear search boundary.</li>
-          <li><strong>Coordination & Product Level (Meso):</strong> Creating folders for each coordination (RTs), divided strictly into Product Evolution (daily work), Visioning (strategic concepts), and Research & Tests (protecting UX history).</li>
-          <li><strong>File Level (Micro):</strong> Replacing loose files with Blueprints—standardized templates reflecting our design process (Discovery, Explorations, Handoff, Critiques, and Tests).</li>
+          <li><strong>Coordination & Product Level (Meso):</strong> Created dedicated folders for each product. Inside each one, the environment was strictly divided into structural subfolders: Product Evolution (daily work), Visioning (strategic concepts), and Research & Tests (protecting UX history).</li>
+          <li><strong>File Level (Micro):</strong> Within these subfolders, I replaced loose files with Blueprints—standardized templates reflecting our design process (Discovery, Explorations, Handoff, Critiques, and Tests).</li>
         </ul>
 
         <h3>From Practice to AI Preparation</h3>
@@ -88,8 +88,8 @@ export const articlesData: ArticleContent = {
         </p>
         <ul>
           <li><strong>Nível Gerencial (Macro):</strong> Centralizei o ecossistema sob a pasta matriz da gerência de Pagamentos, estabelecendo uma fronteira de busca clara.</li>
-          <li><strong>Nível de Coordenações e Produtos (Meso):</strong> Organizei em pastas dividindo rigorosamente cada produto em pastas de arquivos como Evolução do Produto (dia a dia), Visioning (conceitos estratégicos) e Pesquisas e Testes (historização de UX).</li>
-          <li><strong>Nível de Arquivos (Micro):</strong> Substituí arquivos avulsos por blueprints — templates padronizados baseados no processo de design (Discovery, Explorações, Handoff, Critiques e Testes).</li>
+          <li><strong>Nível de Coordenações e Produtos (Meso):</strong> Criei pastas dedicadas para cada produto. Dentro de cada uma, o ambiente foi dividido rigorosamente em subpastas estruturais: Evolução do Produto (dia a dia), Visioning (conceitos estratégicos) e Pesquisas e Testes (historização de UX).</li>
+          <li><strong>Nível de Arquivos (Micro):</strong> Dentro dessas subpastas, substituí arquivos avulsos por blueprints — templates padronizados baseados no processo de design (Discovery, Explorações, Handoff, Critiques e Testes).</li>
         </ul>
 
         <h3>Da Prática à Preparação para IA</h3>
@@ -188,7 +188,7 @@ export const articlesData: ArticleContent = {
 
         <h3>Resultados e Impacto</h3>
         <p>
-          A experiência consolidada do Hub de Pagamentos transformou o gerenciamento financeiro de milhões de clientes. Durante o período do meu envolvimento direto no produto, a Satisfação do Cliente (medida através da escala Likert) subiu de <strong>33% para 59%</strong>[cite: 2]. Esse crescimento em um ecossistema que transaciona mais de 10 milhões de acessos mensais permitiu que a gerência atingisse o seu target estratégico de negócios.
+          A experiência consolidada do Hub de Pagamentos transformou o gerenciamento financeiro de milhões de clientes. Durante o período do meu envolvimento direto no produto, a Satisfação do Cliente (medida através da escala Likert) subiu de <strong>33% para 59%</strong>, atingindo o target de 2025. Esse crescimento em um ecossistema que transaciona mais de 10 milhões de acessos mensais permitiu que a gerência atingisse o seu target estratégico de negócios.
         </p>
         
         <blockquote>

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { FaArrowLeft, FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
+import { FaArrowLeft, FaGithub } from 'react-icons/fa';
 import { useI18n } from '../context/I18nContext';
 import { articlesData } from '../data/articles';
 import { allProjects } from '../data/projects';
@@ -68,16 +68,8 @@ export default function ArticleLayout() {
           </div>
 
           <div className="flex items-center md:justify-end gap-3">
-            {projectInfo.live && (
-              <a 
-                href={projectInfo.live}
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center gap-2 px-4 py-2 bg-white text-black hover:bg-zinc-200 text-xs font-bold rounded-full transition-colors font-ui"
-              >
-                {language === 'en' ? 'View Live' : 'Ver Projeto'} <FaExternalLinkAlt className="text-[10px]" />
-              </a>
-            )}
+            {/* O botão "View Live" foi removido daqui */}
+            
             {projectInfo.github && (
               <a 
                 href={projectInfo.github}
